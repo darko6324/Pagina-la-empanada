@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empanadas en Bogotá | Fritas al momento y congeladas al por mayor — La Empanada Guerrera</title>
+<link rel="canonical" href="https://laempanadaguerrera.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1A0E05">
+<meta name="description" content="Empanadas fritas al momento en Bogotá y empanadas congeladas al por mayor para negocio y hogar. Tiendas, cafeterías y eventos. Ají de frutas tropicales propio y franquicias disponibles.">
+<meta name="keywords" content="empanadas, empanadas Bogotá, empanadas congeladas, empanadas para negocio, empanadas al por mayor, empanadas congeladas al por mayor, distribuidor de empanadas, franquicia de empanadas">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://laempanadaguerrera.com/">
+<meta property="og:site_name" content="La Empanada Guerrera">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="CO-DC">
+<meta name="geo.placename" content="Bogotá">
+<meta property="og:title" content="Empanadas en Bogotá | Fritas al momento y congeladas al por mayor">
+<meta property="og:description" content="Empanadas fritas al momento, empanadas congeladas al por mayor para tu negocio y franquicias en todo el país.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://laempanadaguerrera.com/assets/og-empanadas-la-empanada-guerrera.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://laempanadaguerrera.com/assets/og-empanadas-la-empanada-guerrera.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo+Black&family=Poppins:wght@300;400;500;600&family=Kanit:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#F7B314; --gold-deep:#AF7929; --espresso:#1A0E05; --hueso:#F2ECD7;
+    --hueso-2:#E9E0C4; --leather:#65431A; --choco:#412B14; --chili:#D4380C; --plata:#C4C9CE;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--hueso); color:var(--espresso);
+    font-family:'Poppins',sans-serif; font-weight:300; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Archivo Black',sans-serif; font-weight:400; line-height:1.05; margin:0;}
+  .bangers{font-family:'Bangers',cursive; font-weight:400; letter-spacing:1px;}
+  .kanit{font-family:'Kanit',sans-serif;}
+  .eyebrow{font-family:'Kanit',sans-serif; font-weight:600; letter-spacing:3px; text-transform:uppercase; font-size:.72rem; color:var(--chili);}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .btn{display:inline-flex; align-items:center; gap:9px; font-family:'Kanit',sans-serif; font-weight:600; letter-spacing:.5px;
+    padding:14px 26px; border-radius:10px; border:1.5px solid rgba(26,14,5,.55); cursor:pointer; font-size:.95rem; transition:transform .18s cubic-bezier(.2,.7,.3,1), box-shadow .18s ease;}
+  .btn:hover{transform:translateY(-2px); box-shadow:0 10px 22px -8px rgba(26,14,5,.45);}
+  .btn-chili{background:var(--chili); color:#fff;}
+  .btn-gold{background:var(--gold); color:var(--espresso);}
+  .btn-ghost{background:transparent; color:var(--espresso);}
+  .btn-light{background:var(--hueso); color:var(--espresso);}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky; top:0; z-index:50; background:rgba(242,236,215,.92); backdrop-filter:blur(8px); border-bottom:1px solid rgba(26,14,5,.14);}
+  .nav-in{display:flex; align-items:center; justify-content:space-between; height:66px;}
+  .nav-logo{display:flex; align-items:center; gap:10px;}
+  .nav-logo img{height:46px;}
+  .nav-logo b{font-family:'Bangers',cursive; font-size:1.15rem; letter-spacing:1px; line-height:.9;}
+  .nav-links{display:flex; gap:26px; align-items:center;}
+  .nav-links a{font-family:'Kanit',sans-serif; font-weight:500; font-size:.9rem; letter-spacing:.4px;}
+  .nav-links a:hover{color:var(--chili);}
+  .nav-cta{padding:9px 18px; font-size:.85rem;}
+  .burger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .burger span{display:block; width:26px; height:3px; background:var(--espresso); margin:5px 0; border-radius:2px;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative; overflow:hidden; padding:56px 0 40px;}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:30px; align-items:center;}
+  .hero h1{font-family:'Bangers',cursive; font-weight:400; font-size:clamp(3rem,7vw,5.6rem); letter-spacing:2px; color:var(--espresso); line-height:.92;}
+  .hero h1 .fire{color:var(--chili);}
+  .hero .promise{font-family:'Archivo Black'; font-size:clamp(1.05rem,2.2vw,1.5rem); margin:18px 0 6px; color:var(--leather);}
+  .hero p.lead{font-size:1.05rem; max-width:44ch; margin:10px 0 26px;}
+  .hero-cta{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-badges{display:flex; gap:22px; margin-top:26px; flex-wrap:wrap;}
+  .hero-badge{display:flex; align-items:center; gap:9px; font-family:'Kanit'; font-weight:500; font-size:.82rem; color:var(--leather);}
+  .hero-badge .dot{width:10px; height:10px; border-radius:50%; background:var(--gold); border:1.5px solid var(--espresso);}
+  .hero-mascot{position:relative; text-align:center;}
+  .hero-mascot img{margin:0 auto; width:100%; max-width:460px; height:auto; filter:drop-shadow(0 12px 18px rgba(26,14,5,.22));}
+  .hero-stripe{height:8px; background:repeating-linear-gradient(90deg,var(--gold) 0 34px, var(--chili) 34px 68px); }
+
+  /* ---------- PROMESA (dark band) ---------- */
+  .promesa{background:var(--espresso); color:var(--hueso); padding:54px 0;}
+  .promesa .eyebrow{color:var(--gold);}
+  .promesa h2{color:#fff; font-size:clamp(1.6rem,3.6vw,2.4rem); max-width:20ch; margin:8px 0 34px;}
+  .promesa h2 em{color:var(--gold); font-style:normal;}
+  .pill-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .pill{background:rgba(255,255,255,.045); border:1px solid rgba(247,179,20,.22); border-radius:16px; padding:26px; transition:transform .26s cubic-bezier(.2,.7,.3,1), border-color .26s ease, background .26s ease;}
+  .pill:hover{transform:translateY(-5px); border-color:rgba(247,179,20,.5); background:rgba(255,255,255,.07);}
+  .pill .ic{width:46px; height:46px; border-radius:10px; background:var(--gold); color:var(--espresso); display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:14px;}
+  .pill h3{color:var(--gold); font-size:1.05rem; margin-bottom:8px; font-family:'Archivo Black';}
+  .pill p{font-size:.92rem; color:#e7dfc9; margin:0;}
+
+  /* ---------- SECTION SHELL ---------- */
+  section.block{padding:88px 0;}
+  .sec-head{text-align:center; max-width:620px; margin:0 auto 52px;}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.7rem); margin:8px 0 10px;}
+  .sec-head p{color:var(--leather); font-size:1.02rem; margin:0;}
+  .rope{height:6px; width:64px; margin:14px auto 0; border-radius:3px;
+    background:repeating-linear-gradient(135deg,var(--leather) 0 6px, var(--gold-deep) 6px 12px);}
+
+  /* ---------- FRENTES (3 lines) ---------- */
+  .frentes{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .frente{background:#fff; border:1px solid rgba(26,14,5,.12); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 1px 2px rgba(26,14,5,.05), 0 12px 28px -14px rgba(26,14,5,.28); transition:transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s ease;}
+  .frente:hover{transform:translateY(-6px); box-shadow:0 2px 4px rgba(26,14,5,.06), 0 26px 46px -18px rgba(26,14,5,.4);}
+  .frente-top{padding:26px 24px 18px; position:relative;}
+  .frente-num{font-family:'Bangers'; font-size:2.4rem; color:var(--hueso-2); position:absolute; top:12px; right:18px; line-height:1;}
+  .frente-ic{width:64px; height:64px; margin-bottom:14px;}
+  .frente h3{font-size:1.35rem; margin-bottom:4px;}
+  .frente .tag{font-family:'Kanit'; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; font-size:.7rem; color:var(--chili);}
+  .frente-body{padding:0 24px 24px; flex:1; display:flex; flex-direction:column;}
+  .frente-body p{font-size:.94rem; color:#4a3620; margin:10px 0 16px;}
+  .frente ul{list-style:none; padding:0; margin:0 0 20px;}
+  .frente li{font-size:.9rem; padding-left:22px; position:relative; margin-bottom:7px;}
+  .frente li:before{content:"›"; position:absolute; left:4px; color:var(--chili); font-weight:700;}
+  .frente .btn{margin-top:auto; justify-content:center;}
+
+  /* ---------- CATALOGO ---------- */
+  .cat-tabs{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;}
+  .cat-tab{font-family:'Kanit'; font-weight:600; letter-spacing:.5px; padding:10px 20px; border-radius:30px; border:1px solid rgba(26,14,5,.3); background:transparent; cursor:pointer; font-size:.86rem; transition:background .2s ease, color .2s ease, border-color .2s ease;}
+  .cat-tab.on{background:var(--espresso); color:var(--hueso);}
+  .cat-note{text-align:center; font-family:'Kanit'; font-size:.8rem; color:var(--leather); margin:-20px 0 30px; opacity:.85;}
+  .menu-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .card{background:#fff; border:1px solid rgba(26,14,5,.12); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 1px 2px rgba(26,14,5,.04), 0 10px 24px -16px rgba(26,14,5,.3); transition:transform .26s cubic-bezier(.2,.7,.3,1), box-shadow .26s ease;}
+  .card:hover{transform:translateY(-5px); box-shadow:0 2px 4px rgba(26,14,5,.06), 0 22px 40px -18px rgba(26,14,5,.36);}
+  .card-img{aspect-ratio:4/3; background:var(--hueso-2); display:flex; align-items:center; justify-content:center; position:relative; border-bottom:1px solid rgba(26,14,5,.14);}
+  .card-img .ph{text-align:center; font-family:'Kanit'; font-weight:500; font-size:.72rem; letter-spacing:1px; color:var(--leather); opacity:.75; padding:0 14px;}
+  .card-img .ph svg{width:34px; height:34px; margin:0 auto 6px; display:block; opacity:.6;}
+  .card-body{padding:16px 18px;}
+  .card-body .cname{font-family:'Bangers'; font-size:1.35rem; letter-spacing:.5px; line-height:1;}
+  .card-body .cfill{font-family:'Kanit'; font-weight:600; font-size:.72rem; letter-spacing:1px; text-transform:uppercase; color:var(--chili); margin:2px 0 8px;}
+  .card-body p{font-size:.86rem; color:#4a3620; margin:0;}
+  .card .price-slot{margin-top:12px; border-top:1px dashed rgba(26,14,5,.18); padding-top:9px; display:flex; align-items:baseline; gap:6px;}
+  .card .pz{font-family:'Archivo Black',sans-serif; font-size:1.12rem; color:var(--espresso); letter-spacing:.2px;}
+  .card .pu{font-family:'Kanit',sans-serif; font-weight:500; font-size:.72rem; color:var(--leather); text-transform:uppercase; letter-spacing:1px;}
+  .card .price-slot:has(.pz){color:inherit;}
+  .panel{display:none;}
+  .panel.on{display:block;}
+
+  /* ---------- AJI feature ---------- */
+  .aji{background:var(--chili); color:#fff; border-radius:20px; overflow:hidden; margin:0 auto; max-width:var(--maxw);}
+  .aji-grid{display:grid; grid-template-columns:.8fr 1.2fr; align-items:center; gap:10px;}
+  .aji-img{background:repeating-linear-gradient(135deg,#c13309 0 22px,#b32e07 22px 44px); display:flex; align-items:center; justify-content:center; padding:34px; min-height:260px;}
+  .aji-img img{max-height:200px; filter:drop-shadow(0 10px 16px rgba(0,0,0,.35));}
+  .aji-txt{padding:40px 44px 40px 24px;}
+  .aji-txt .eyebrow{color:#ffe0b0;}
+  .aji-txt h2{color:#fff; font-size:clamp(1.6rem,3.4vw,2.3rem); margin:8px 0 12px;}
+  .aji-txt p{color:#ffe2d5; font-size:1rem; max-width:46ch;}
+
+  /* ---------- EQUIPO ---------- */
+  .team{display:grid; grid-template-columns:repeat(5,1fr); gap:18px;}
+  .member{text-align:center;}
+  .member .ph-photo{aspect-ratio:1; border-radius:16px; background:var(--hueso-2); border:1px solid rgba(26,14,5,.12); overflow:hidden; margin-bottom:12px; box-shadow:0 10px 24px -16px rgba(26,14,5,.4); transition:transform .26s cubic-bezier(.2,.7,.3,1);}
+  .member:hover .ph-photo{transform:translateY(-4px);}
+  .member .ph-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+  .member .ph-photo span{font-family:'Kanit'; font-size:.68rem; letter-spacing:1px; color:var(--leather); opacity:.7;}
+  .member h4{font-family:'Archivo Black'; font-size:.98rem;}
+  .member .role{font-family:'Kanit'; font-weight:500; font-size:.76rem; color:var(--chili); letter-spacing:.3px;}
+
+  /* ---------- FRANQUICIA CTA ---------- */
+  .legion{background:var(--espresso); color:var(--hueso); border-radius:20px; padding:52px 44px; text-align:center; max-width:var(--maxw); margin:0 auto; position:relative; overflow:hidden;}
+  .legion .eyebrow{color:var(--gold);}
+  .legion h2{color:#fff; font-size:clamp(1.7rem,3.6vw,2.6rem); margin:10px auto 12px; max-width:22ch;}
+  .legion h2 em{color:var(--gold); font-style:normal;}
+  .legion p{color:#e7dfc9; max-width:52ch; margin:0 auto 26px;}
+  .legion-laurel{position:absolute; opacity:.14; top:-20px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--choco); color:var(--hueso); padding:52px 0 26px; margin-top:64px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:30px;}
+  footer h5{font-family:'Kanit'; font-weight:600; letter-spacing:2px; text-transform:uppercase; font-size:.74rem; color:var(--gold); margin:0 0 14px;}
+  footer a{font-size:.9rem; display:block; margin-bottom:8px; color:#e7dfc9;}
+  footer a.ct{display:flex; align-items:center; gap:10px; margin-bottom:11px; line-height:1.32;}
+  footer a.ct b{font-family:'Kanit',sans-serif; font-weight:500; color:#fff; letter-spacing:.3px;}
+  .ct-ic{flex:0 0 30px; width:30px; height:30px; border-radius:8px; background:rgba(255,255,255,.10);
+    border:1px solid rgba(247,179,20,.35); display:flex; align-items:center; justify-content:center; color:var(--gold); transition:background .15s ease, color .15s ease;}
+  .ct-ic svg{width:17px; height:17px;}
+  footer a.ct:hover .ct-ic{background:var(--gold); color:var(--espresso);}
+  footer a.ct:hover .ct-ic.wa{background:#25D366; color:#fff; border-color:#25D366;}
+  footer a.ct:hover .ct-ic.ig{background:#E1306C; color:#fff; border-color:#E1306C;}
+  footer a.ct:hover .ct-ic.tt{background:#fff; color:#000; border-color:#fff;}
+  footer a:hover{color:var(--gold);}
+  .foot-logo img{height:54px; margin-bottom:12px;}
+  .foot-logo p{font-size:.85rem; color:#cbb892; max-width:34ch;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12); margin-top:34px; padding-top:18px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:.76rem; color:#b7a079; font-family:'Kanit';}
+
+  .wa-float{position:fixed; right:20px; bottom:20px; z-index:60; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 26px -6px rgba(37,211,102,.6); border:none; transition:transform .2s ease;}
+  .wa-float:hover{transform:scale(1.07);}
+  .wa-float svg{width:30px; height:30px;}
+
+
+  /* ---- grano sutil de fondo ---- */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  /* el grano queda debajo del contenido; NO tocar position de nav/flotantes */
+  .hero, section, footer{position:relative; z-index:2;}
+  header.nav{z-index:50;}
+  .wa-float{z-index:60;}
+  .order-bar{z-index:70;}
+
+  /* ---- 5. aparicion al hacer scroll ---- */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);}
+  .reveal.seen{opacity:1; transform:none;}
+
+  /* ---- menu activo segun seccion ---- */
+  .nav-links a{position:relative; padding:4px 0; transition:color .2s ease;}
+  .nav-links a:not(.btn)::after{content:""; position:absolute; left:0; right:0; bottom:-2px; height:2px;
+    background:var(--chili); border-radius:2px; transform:scaleX(0); transform-origin:left; transition:transform .28s cubic-bezier(.2,.7,.3,1);}
+  .nav-links a:not(.btn):hover::after{transform:scaleX(1);}
+  .nav-links a.activo{color:var(--chili); font-weight:600;}
+  .nav-links a.activo::after{transform:scaleX(1);}
+
+  /* ---- 6. barra fija de pedido en movil ---- */
+  .order-bar{display:none;}
+  @media(max-width:900px){
+    .wa-float{display:none;}
+    .order-bar{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:70; gap:10px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+      background:rgba(26,14,5,.96); backdrop-filter:blur(10px); border-top:1px solid rgba(247,179,20,.28);}
+    .order-bar a{flex:1; justify-content:center; padding:13px 10px; font-size:.9rem; border:none;}
+    .order-bar .ob-wa{background:#25D366; color:#fff;}
+    .order-bar .ob-fr{background:var(--gold); color:var(--espresso);}
+    body{padding-bottom:76px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    *{animation:none !important;}
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:900px){
+    .nav-links{display:none;} .burger{display:block;}
+    .hero-grid{grid-template-columns:1fr; text-align:center;}
+    .hero-mascot{order:-1;} .hero-mascot img{max-width:300px;}
+    .hero-cta,.hero-badges{justify-content:center;}
+    .hero p.lead{margin-left:auto; margin-right:auto;}
+    .pill-grid,.frentes,.menu-grid{grid-template-columns:1fr;}
+    .aji-grid{grid-template-columns:1fr;}
+    .team{grid-template-columns:repeat(2,1fr);}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:560px){
+    .team{grid-template-columns:repeat(2,1fr);} .foot-grid{grid-template-columns:1fr;}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "Restaurant",
+    "LocalBusiness"
+   ],
+   "@id": "https://laempanadaguerrera.com/#negocio",
+   "name": "La Empanada Guerrera",
+   "legalName": "Inversiones Guerreras S.A.S.",
+   "slogan": "Listas para el combate",
+   "description": "Punto de venta de empanadas fritas al momento y distribución de empanadas congeladas al por mayor para negocios y hogares en Bogotá. Ají de frutas tropicales de receta propia.",
+   "servesCuisine": [
+    "Empanadas",
+    "Comida colombiana"
+   ],
+   "priceRange": "$",
+   "currenciesAccepted": "COP",
+   "url": "https://laempanadaguerrera.com/",
+   "telephone": "+573239102290",
+   "email": "contacto@laempanadaguerrera.com",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cra. 76 #80b-16, Engativá",
+    "addressLocality": "Bogotá",
+    "addressRegion": "Bogotá D.C.",
+    "addressCountry": "CO"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 4.6982302,
+    "longitude": -74.0922446
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Bogotá"
+   },
+   "sameAs": [
+    "https://www.instagram.com/laempanadaguerrera/",
+    "https://www.tiktok.com/@laempanadaguerrera"
+   ],
+   "hasMenu": {
+    "@type": "Menu",
+    "name": "Catálogo de empanadas",
+    "hasMenuSection": [
+     {
+      "@type": "MenuSection",
+      "name": "Empanadas fritas",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "La Tradicional Guerrera",
+        "description": "Empanada de papa y carne, frita al momento. La infantería de la casa.",
+        "offers": {
+         "@type": "Offer",
+         "price": "3500",
+         "priceCurrency": "COP"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "La Carnuda Blindada",
+        "description": "Empanada con más carne, reforzada para el hambre de verdad.",
+        "offers": {
+         "@type": "Offer",
+         "price": "3900",
+         "priceCurrency": "COP"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "La Guerrera Pío Pío",
+        "description": "Empanada de papa y pollo desmechado con la crocancia perfecta.",
+        "offers": {
+         "@type": "Offer",
+         "price": "3700",
+         "priceCurrency": "COP"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "La Escudo de Oro",
+        "description": "Empanada de queso derretido en cubierta crujiente y frita.",
+        "offers": {
+         "@type": "Offer",
+         "price": "3700",
+         "priceCurrency": "COP"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Las Escuadras de Asalto",
+        "description": "Coctelera de carne: bocados crujientes para compartir o eventos.",
+        "offers": {
+         "@type": "Offer",
+         "price": "1400",
+         "priceCurrency": "COP"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://laempanadaguerrera.com/#mayoreo",
+   "name": "Empanadas congeladas al por mayor",
+   "serviceType": "Distribución de empanadas congeladas para negocio",
+   "description": "Venta de empanadas congeladas al por mayor para tiendas, cafeterías, colegios, empresas, eventos y hogares. Producto estable, de calidad constante y con respaldo sanitario.",
+   "provider": {
+    "@id": "https://laempanadaguerrera.com/#negocio"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "Colombia"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://laempanadaguerrera.com/#franquicia",
+   "name": "Franquicias de empanadas",
+   "serviceType": "Oportunidad de franquicia",
+   "description": "Apertura de franquicias de La Empanada Guerrera: operación simple sin cocina de producción, local de 10 a 20 m², marca, manual de operación y abastecimiento desde la matriz.",
+   "provider": {
+    "@id": "https://laempanadaguerrera.com/#negocio"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "Colombia"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://laempanadaguerrera.com/#sitio",
+   "url": "https://laempanadaguerrera.com/",
+   "name": "La Empanada Guerrera",
+   "inLanguage": "es-CO",
+   "publisher": {
+    "@id": "https://laempanadaguerrera.com/#negocio"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="#top">
+      <img decoding="async" src="assets/logo-la-empanada-guerrera.png" alt="La Empanada Guerrera">
+    </a>
+    <nav class="nav-links" aria-label="Menú principal">
+      <a href="#frentes">Qué hacemos</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#aji">El ají</a>
+      <a href="#equipo">Nosotros</a>
+      <a href="#franquicia">Franquicias</a>
+      <a class="btn btn-chili nav-cta" href="https://wa.me/573239102290?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20empanadas" target="_blank" rel="noopener">Pídelas por WhatsApp</a>
+    </nav>
+    <button class="burger" aria-label="Menú" onclick="document.querySelector('.nav-links').classList.toggle('open');this.nextfix&&0;">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<a id="top"></a>
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Empanadas fritas al momento y congeladas · Bogotá</span>
+      <h1>LISTAS PARA<br>EL <span class="fire">COMBATE</span></h1>
+      <div class="promise">No vendemos de vitrina. Vendemos de freidora.</div>
+      <p class="lead">Empanadas fritas cuando las pides, crujientes de verdad y con un ají de frutas tropicales hecho a mano que no encuentras en otra parte. También vendemos empanadas congeladas al por mayor para tu negocio.</p>
+      <div class="hero-cta">
+        <a class="btn btn-chili" href="https://wa.me/573239102290?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20empanadas" target="_blank" rel="noopener">Pídelas ya</a>
+        <a class="btn btn-ghost" href="https://wa.me/573175126853?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20abrir%20una%20franquicia%20de%20La%20Empanada%20Guerrera" target="_blank" rel="noopener">Quiero una franquicia</a>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="dot"></span> Recién de la freidora</div>
+        <div class="hero-badge"><span class="dot"></span> Ají de receta propia</div>
+        <div class="hero-badge"><span class="dot"></span> Punto formal y con respaldo</div>
+      </div>
+    </div>
+    <div class="hero-mascot">
+      <img decoding="async" fetchpriority="high" src="assets/empanadas-la-empanada-guerrera-bogota.png" alt="La Empanada Guerrera">
+    </div>
+  </div>
+</section>
+<div class="hero-stripe"></div>
+
+<!-- ===== PROMESA ===== -->
+<section class="promesa">
+  <div class="wrap">
+    <span class="eyebrow">Por qué somos distintas</span>
+    <h2>La empanada no tiene problema de demanda. Tiene problema de <em>entrega</em>.</h2>
+    <div class="pill-grid">
+      <div class="pill">
+        <div class="ic">🔥</div>
+        <h3>De la freidora, no de la vitrina</h3>
+        <p>Freímos cuando el cliente pide. Nada de empanadas apiladas bajo una lámpara durante horas. Crujiente y caliente, como debe ser.</p>
+      </div>
+      <div class="pill">
+        <div class="ic">🌶️</div>
+        <h3>Ají de frutas tropicales</h3>
+        <p>Receta propia, hecha a mano en el punto. Es lo único que preparamos nosotros y lo que el cliente recuerda y no consigue en la esquina.</p>
+      </div>
+      <div class="pill">
+        <div class="ic">🛡️</div>
+        <h3>Formal y con respaldo</h3>
+        <p>Producto con respaldo sanitario, factura y permisos en regla. Cadena de frío cuidada y trazabilidad en cada paquete.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FRENTES (3 líneas de negocio) ===== -->
+<section class="block" id="frentes" aria-label="Qué hacemos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tres frentes, una sola marca</span>
+      <h2>Empanadas para tu punto, tu negocio y tu casa</h2>
+      <p>Un mismo producto, tres formas de llegar a ti: empanadas fritas en nuestro punto, empanadas congeladas para tu negocio o tu cocina, y franquicias para que montes el tuyo.</p>
+      <div class="rope"></div>
+    </div>
+    <div class="frentes">
+
+      <div class="frente">
+        <div class="frente-top">
+          <span class="frente-num">01</span>
+          <img class="frente-ic" src="assets/mascota-empanada-guerrera.png" alt="">
+          <span class="tag">El frente</span>
+          <h3>Puntos de venta de empanadas</h3>
+        </div>
+        <div class="frente-body">
+          <p>Nuestros locales, donde la empanada se fríe frente a ti y el ají se sirve al momento. Aquí vive la marca.</p>
+          <ul>
+            <li>Empanada frita al momento</li>
+            <li>Tinto y gaseosa para acompañar</li>
+            <li>Cerca de universidades y oficinas</li>
+          </ul>
+          <a class="btn btn-gold" href="#catalogo">Ver la carta</a>
+        </div>
+      </div>
+
+      <div class="frente">
+        <div class="frente-top">
+          <span class="frente-num">02</span>
+          <img class="frente-ic" src="assets/escudo-empanadas-guerreras.png" alt="">
+          <span class="tag">El arsenal</span>
+          <h3>Empanadas congeladas para negocio y hogar</h3>
+        </div>
+        <div class="frente-body">
+          <p>Paquetes de empanada cruda y congelada, con nuestra marca. Las fríes donde quieras: en tu tienda, tu cafetería o tu casa.</p>
+          <ul>
+            <li>Tiendas, cafeterías y colegios</li>
+            <li>Eventos y reuniones familiares</li>
+            <li>Producto estable y de calidad constante</li>
+          </ul>
+          <a class="btn btn-gold" href="#catalogo" data-goto="congeladas">Pedir al por mayor</a>
+        </div>
+      </div>
+
+      <div class="frente">
+        <div class="frente-top">
+          <span class="frente-num">03</span>
+          <img class="frente-ic" src="assets/rama-laurel-empanada-guerrera.png" alt="">
+          <span class="tag">La legión</span>
+          <h3>Franquicias de empanadas</h3>
+        </div>
+        <div class="frente-body">
+          <p>Monta tu propio punto guerrero con una operación simple y probada: freidora, congelador y mostrador. Nosotros ponemos la marca y el abastecimiento.</p>
+          <ul>
+            <li>Sin cocina de producción</li>
+            <li>Local pequeño (10 a 20 m²)</li>
+            <li>Acompañamiento y manual de operación</li>
+          </ul>
+          <a class="btn btn-gold" href="https://wa.me/573175126853?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20abrir%20una%20franquicia%20de%20La%20Empanada%20Guerrera" target="_blank" rel="noopener">Postularme</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATALOGO ===== -->
+<section class="block" id="catalogo" aria-label="Catálogo de empanadas" style="background:var(--hueso-2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">La carta</span>
+      <h2>Catálogo de empanadas</h2>
+      <p>Cada empanada tiene su nombre de combate. Las mismas empanadas, disponibles fritas en el punto o congeladas para llevar y para negocio.</p>
+      <div class="rope"></div>
+    </div>
+
+    <div class="cat-tabs">
+      <button class="cat-tab on" data-p="empanadas">Empanadas</button>
+      <button class="cat-tab" data-p="acomp">Acompañamientos</button>
+      <button class="cat-tab" data-p="congeladas">Para llevar · Congeladas</button>
+    </div>
+    <div class="cat-note">Deja las fotos reales de cada producto en su recuadro</div>
+
+    <!-- EMPANADAS -->
+    <div class="panel on" id="p-empanadas">
+      <div class="menu-grid">
+        <div class="card">
+          <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>La Tradicional Guerrera</div></div>
+          <div class="card-body">
+            <div class="cname">La Tradicional Guerrera</div>
+            <div class="cfill">Papa y carne</div>
+            <p>La infantería de la casa. El sabor de siempre, frita al momento y lista para el combate.</p>
+            <div class="price-slot"><span class="pz">$3.500</span> <span class="pu">unidad</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>La Carnuda Blindada</div></div>
+          <div class="card-body">
+            <div class="cname">La Carnuda Blindada</div>
+            <div class="cfill">Más carne</div>
+            <p>Pura fuerza. Reforzada con 50% de carne para ganar cualquier batalla contra el hambre.</p>
+            <div class="price-slot"><span class="pz">$3.900</span> <span class="pu">unidad</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>La Guerrera Pío Pío</div></div>
+          <div class="card-body">
+            <div class="cname">La Guerrera Pío Pío</div>
+            <div class="cfill">Papa y pollo</div>
+            <p>Ataque táctico. Relleno balanceado de puro pollo desmechado con la crocancia perfecta.</p>
+            <div class="price-slot"><span class="pz">$3.700</span> <span class="pu">unidad</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>La Escudo de Oro</div></div>
+          <div class="card-body">
+            <div class="cname">La Escudo de Oro</div>
+            <div class="cfill">Queso</div>
+            <p>Dorado e imbatible. Corazón de queso derretido en una cubierta crujiente y frita.</p>
+            <div class="price-slot"><span class="pz">$3.700</span> <span class="pu">unidad</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>Las Escuadras de Asalto</div></div>
+          <div class="card-body">
+            <div class="cname">Las Escuadras de Asalto</div>
+            <div class="cfill">Coctelera de carne</div>
+            <p>El escuadrón mini. Bocados crujientes ideales para compartir en tropa o eventos.</p>
+            <div class="price-slot"><span class="pz">$1.400</span> <span class="pu">c/u</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACOMPAÑAMIENTOS -->
+    <div class="panel" id="p-acomp">
+      <div class="menu-grid">
+        <div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>El Refuerzo</div></div>
+        <div class="card-body">
+          <div class="cname">El Refuerzo</div>
+          <div class="cfill">Tinto</div>
+          <p>El mejor aliado de la empanada y el de mejor margen de la carta. Café recién pasado.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+<div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>La Reserva</div></div>
+        <div class="card-body">
+          <div class="cname">La Reserva</div>
+          <div class="cfill">Gaseosa</div>
+          <p>Fría y lista. El acompañamiento que todos piden para bajar el picante.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+<div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>Ají de Combate</div></div>
+        <div class="card-body">
+          <div class="cname">Ají de Combate</div>
+          <div class="cfill">Ají de frutas tropicales</div>
+          <p>Nuestra receta propia, servida al momento. El sabor que nadie más tiene.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- CONGELADAS -->
+    <div class="panel" id="p-congeladas">
+      <div class="menu-grid">
+        <div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>Pelotón x25</div></div>
+        <div class="card-body">
+          <div class="cname">Pelotón x25</div>
+          <div class="cfill">Paquete de 25 congeladas</div>
+          <p>El paquete base para negocios y hogares. Disponible en cualquiera de nuestros sabores, crudas y congeladas para freír donde quieras.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+<div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>Batallón</div></div>
+        <div class="card-body">
+          <div class="cname">Batallón</div>
+          <div class="cfill">Pedido por volumen</div>
+          <p>Varios paquetes para tiendas, cafeterías, colegios y eventos. Precio y entrega a convenir.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+<div class="card">
+        <div class="card-img"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13c0-4 4-7 9-7s9 3 9 7c0 1-1 2-2 2H5c-1 0-2-1-2-2z"/><path d="M6 13c0-2 3-4 6-4s6 2 6 4"/></svg>FOTO REAL<br>Ají de Combate envasado</div></div>
+        <div class="card-body">
+          <div class="cname">Ají de Combate envasado</div>
+          <div class="cfill">Frasco para llevar</div>
+          <p>Lleva nuestro ají de frutas tropicales a tu punto o tu cocina. La marca que viaja contigo.</p>
+          <div class="price-slot">Precio: por definir</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AJI ===== -->
+<section class="block" id="aji" aria-label="El ají de frutas tropicales">
+  <div class="aji">
+    <div class="aji-grid">
+      <div class="aji-img"><img loading="lazy" decoding="async" src="assets/aji-frutas-tropicales-empanadas.png" alt="Ají de frutas tropicales"></div>
+      <div class="aji-txt">
+        <span class="eyebrow">El diferencial</span>
+        <h2>El ají de frutas tropicales</h2>
+        <p>Receta propia, hecha a mano, con base de frutas tropicales. Convierte una empanada buena en una empanada memorable, y ahora también lo puedes llevar envasado a tu punto o tu casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EQUIPO ===== -->
+<section class="block" id="equipo" aria-label="Nuestro equipo" style="background:var(--hueso-2);">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Quiénes estamos detrás</span>
+      <h2>La tropa</h2>
+      <p>Un equipo con roles claros para que la operación, el producto y la expansión avancen en orden.</p>
+      <div class="rope"></div>
+    </div>
+    <div class="team">
+      <div class="member">
+        <div class="ph-photo"><img src="assets/equipo-david-guerrero.jpg" alt="David Guerrero"></div>
+        <h4>David Guerrero</h4>
+        <div class="role">Estrategia y logística</div>
+      </div>
+<div class="member">
+        <div class="ph-photo"><img src="assets/equipo-laura-riano.jpg" alt="Laura Riaño"></div>
+        <h4>Laura Riaño</h4>
+        <div class="role">Legal y marketing</div>
+      </div>
+<div class="member">
+        <div class="ph-photo"><img src="assets/equipo-sandra-uribe.jpg" alt="Sandra Uribe"></div>
+        <h4>Sandra Uribe</h4>
+        <div class="role">Ventas y expansión</div>
+      </div>
+<div class="member">
+        <div class="ph-photo"><img src="assets/equipo-kevin-echeverry.jpg" alt="Kevin Echeverry"></div>
+        <h4>Kevin Echeverry</h4>
+        <div class="role">Operaciones</div>
+      </div>
+<div class="member">
+        <div class="ph-photo"><img src="assets/equipo-samuel-guerrero.jpg" alt="Samuel Guerrero"></div>
+        <h4>Samuel Guerrero</h4>
+        <div class="role">Tecnología y producto</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FRANQUICIA CTA ===== -->
+<section class="block" id="franquicia" aria-label="Franquicias">
+  <div class="legion">
+    <img class="legion-laurel" src="assets/rama-laurel-empanada-guerrera.png" style="left:-10px;" alt="">
+    <span class="eyebrow">Suma tu bandera</span>
+    <h2>Únete a la <em>Legión Guerrera</em></h2>
+    <p>Si ya vendes nuestras congeladas o quieres montar tu punto, la franquicia es el siguiente paso: operación simple, marca reconocida y abastecimiento asegurado desde la matriz.</p>
+    <a class="btn btn-gold" href="https://wa.me/573175126853?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20abrir%20una%20franquicia%20de%20La%20Empanada%20Guerrera" target="_blank" rel="noopener">Quiero ser franquiciado</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-logo">
+        <img loading="lazy" decoding="async" src="assets/logo-blanco-la-empanada-guerrera.png" alt="La Empanada Guerrera">
+        <p>Punto de venta de empanada frita al momento y distribución de congelada al por mayor. Listas para el combate.</p>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <a href="#frentes">Qué hacemos</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#aji">El ají</a>
+        <a href="#equipo">Nosotros</a>
+      </div>
+      <div>
+        <h5>Negocios</h5>
+        <a href="#frentes">Puntos de venta</a>
+        <a href="#catalogo">Congeladas al por mayor</a>
+        <a href="#franquicia">Franquicias</a>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <a class="ct" href="https://wa.me/573239102290" target="_blank" rel="noopener"><span class="ct-ic wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3 9 6.7 8.8 6.8 8.6 6.8h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.3 5.2 4.6 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg></span><span>Pedidos<br><b>+57 323 910 2290</b></span></a>
+        <a class="ct" href="https://wa.me/573175126853?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20abrir%20una%20franquicia%20de%20La%20Empanada%20Guerrera" target="_blank" rel="noopener"><span class="ct-ic wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3 9 6.7 8.8 6.8 8.6 6.8h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.3 5.2 4.6 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg></span><span>Franquicias<br><b>+57 317 512 6853</b></span></a>
+        <a class="ct" href="mailto:contacto@laempanadaguerrera.com" target="_blank" rel="noopener"><span class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg></span><span>contacto@laempanadaguerrera.com</span></a>
+        <a class="ct" href="https://www.instagram.com/laempanadaguerrera/" target="_blank" rel="noopener"><span class="ct-ic ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></span><span>@laempanadaguerrera</span></a>
+        <a class="ct" href="https://www.tiktok.com/@laempanadaguerrera" target="_blank" rel="noopener"><span class="ct-ic tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8c-1-.7-1.6-1.8-1.8-3h-2.9v11.4c0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4 1.1-2.4 2.4-2.4c.3 0 .5 0 .7.1V8.9c-.2 0-.5-.1-.7-.1-3 0-5.4 2.4-5.4 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4V9c1.1.8 2.5 1.3 4 1.3V7.4c-.9 0-1.7-.3-2.3-.8v-.8z"/></svg></span><span>@laempanadaguerrera</span></a>
+        <a class="ct" href="https://www.google.com/maps/place/Cra.+76+%2380b-16,+Engativ%C3%A1,+Bogot%C3%A1,+Cundinamarca/@4.6982302,-74.0922446,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b308cd882ed:0xb4782215daceace3!8m2!3d4.6982302!4d-74.0922446!16s%2Fg%2F11m63mqmlb" target="_blank" rel="noopener"><span class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span>Cra. 76 #80b-16, Engativá<br><b>Bogotá D.C.</b></span></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Inversiones Guerreras S.A.S. · La Empanada Guerrera</span>
+      <span>CIIU 5619 · 4631 — Todos los derechos reservados</span>
+    </div>
+  </div>
+</footer>
+
+<div class="order-bar">
+  <a class="btn ob-wa" href="https://wa.me/573239102290?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20empanadas" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  <a class="btn ob-fr" href="https://wa.me/573175126853?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20abrir%20una%20franquicia%20de%20La%20Empanada%20Guerrera" target="_blank" rel="noopener">Franquicias</a>
+</div>
+
+<a class="wa-float" href="https://wa.me/573239102290" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3 9 6.7 8.8 6.8 8.6 6.8h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.3 5.2 4.6 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
+</a>
+
+<script>
+  function activarPanel(nombre){
+    var tab=document.querySelector('.cat-tab[data-p="'+nombre+'"]');
+    if(!tab) return;
+    document.querySelectorAll('.cat-tab').forEach(function(x){x.classList.remove('on');});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
+    tab.classList.add('on');
+    var panel=document.getElementById('p-'+nombre);
+    if(panel){
+      panel.classList.add('on');
+      // las tarjetas ocultas no disparan el observador: mostrarlas al abrir la pestaña
+      panel.querySelectorAll('.reveal').forEach(function(el,i){
+        el.style.transitionDelay=((i%3)*70)+'ms';
+        requestAnimationFrame(function(){ el.classList.add('seen'); });
+      });
+    }
+  }
+  document.querySelectorAll('.cat-tab').forEach(function(t){
+    t.addEventListener('click',function(){ activarPanel(t.dataset.p); });
+  });
+  // Enlaces que bajan al catalogo preseleccionando una pestaña
+  document.querySelectorAll('[data-goto]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      activarPanel(a.dataset.goto);
+      var dest=document.getElementById('catalogo');
+      if(dest) dest.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null,'','#catalogo');
+    });
+  });
+
+  // ---- aparicion suave al hacer scroll ----
+  (function(){
+    var animar = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var objetivos = document.querySelectorAll('.sec-head, .frente, .card, .pill, .member, .aji, .legion, .hero-copy, .hero-mascot');
+    if(!animar || !('IntersectionObserver' in window)){
+      objetivos.forEach(function(el){ el.classList.add('seen'); });
+      return;
+    }
+    objetivos.forEach(function(el,i){
+      el.classList.add('reveal');
+      el.style.transitionDelay = ((i % 3) * 90) + 'ms';
+    });
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('seen'); obs.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:.12});
+    objetivos.forEach(function(el){ obs.observe(el); });
+  })();
+
+  // ---- menu: marca la seccion en la que estas ----
+  (function(){
+    var enlaces = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+    var mapa = enlaces.map(function(a){
+      var s = document.querySelector(a.getAttribute('href'));
+      return s ? {a:a, s:s} : null;
+    }).filter(Boolean);
+    if(!mapa.length) return;
+
+    function marcar(){
+      var y = window.scrollY + (document.querySelector('header.nav').offsetHeight + 40);
+      var actual = null;
+      mapa.forEach(function(m){
+        if(m.s.offsetTop <= y) actual = m;
+      });
+      // si estamos al final de la pagina, marcar la ultima
+      if(window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) actual = mapa[mapa.length-1];
+      // arriba del todo: ninguna
+      if(window.scrollY < 120) actual = null;
+      mapa.forEach(function(m){ m.a.classList.toggle('activo', m === actual); });
+    }
+    var tick=false;
+    window.addEventListener('scroll', function(){
+      if(tick) return; tick=true;
+      requestAnimationFrame(function(){ marcar(); tick=false; });
+    }, {passive:true});
+    window.addEventListener('resize', marcar);
+    marcar();
+  })();
+</script>
+</body>
+</html>
