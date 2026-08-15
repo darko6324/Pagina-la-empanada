@@ -872,3 +872,42 @@
 </script>
 </body>
 </html>
+
+<!-- Correccion del menu movil -->
+<style>
+  @media(max-width:900px){
+    .nav-links{display:flex; position:fixed; top:66px; left:0; right:0; flex-direction:column; align-items:stretch; gap:0; background:var(--hueso); border-bottom:1px solid rgba(26,14,5,.14); box-shadow:0 18px 30px -18px rgba(26,14,5,.45); max-height:0; overflow:hidden; opacity:0; pointer-events:none; transition:max-height .32s ease, opacity .22s ease; z-index:49;}
+    .nav-links.open{max-height:80vh; opacity:1; pointer-events:auto; overflow:auto;}
+    .nav-links a{padding:16px 24px; border-bottom:1px solid rgba(26,14,5,.08); font-size:1rem;}
+    .nav-links a:not(.btn)::after{display:none;}
+    .nav-links a.btn{margin:14px 24px 20px; justify-content:center; border-radius:10px;}
+    .burger{display:block; position:relative; z-index:51;}
+    .burger span{transition:transform .28s ease, opacity .2s ease;}
+    .burger.abierto span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+    .burger.abierto span:nth-child(2){opacity:0;}
+    .burger.abierto span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+  }
+  </style>
+<script>
+  (function(){
+    var boton=document.querySelector('.burger');
+    var menu=document.querySelector('.nav-links');
+    if(!boton||!menu) return;
+    boton.removeAttribute('onclick');
+    boton.setAttribute('aria-expanded','false');
+    function alternar(abrir){
+      var estado=(abrir===undefined)?!menu.classList.contains('open'):abrir;
+      menu.classList.toggle('open',estado);
+      boton.classList.toggle('abierto',estado);
+      boton.setAttribute('aria-expanded',estado?'true':'false');
+    }
+    boton.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();alternar();});
+    menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){alternar(false);});});
+    document.addEventListener('click',function(e){if(menu.classList.contains('open')&&!menu.contains(e.target)&&!boton.contains(e.target))alternar(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')alternar(false);});
+    window.addEventListener('resize',function(){if(window.innerWidth>900)alternar(false);});
+  })();
+</script>
+
+</script>
+</style>
