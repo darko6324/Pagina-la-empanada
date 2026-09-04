@@ -1,57 +1,155 @@
 <!DOCTYPE html>
-<html lang="es-CO">
+<html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog de La Empanada Guerrera | Empanadas, recetas e historias</title>
-<meta name="description" content="Descubre historias, recetas, productos y consejos de La Empanada Guerrera. Aprende sobre empanadas colombianas, empanadas congeladas y negocios gastronómicos.">
-<link rel="canonical" href="https://laempanadaguerrera.com/blog/">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Blog de La Empanada Guerrera">
-<meta property="og:description" content="Historias, recetas y secretos detrás de nuestras empanadas.">
-<link rel="stylesheet" href="../assets/estilos.css">
+
+<meta charset="UTF-8">
+
+<title>
+Blog de empanadas colombianas | La Empanada Guerrera
+</title>
+
+
+<meta name="description" content="
+Historias, recetas, productos y consejos sobre empanadas colombianas, empanadas congeladas y negocios de comida.
+">
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
 <style>
-body{margin:0;background:#f2ecd7;color:#1a0e05;font-family:Poppins,Arial,sans-serif}
-.wrap{max-width:1180px;margin:auto;padding:30px 24px}
-h1,h2{font-family:Arial Black,Arial,sans-serif}
-.hero{text-align:center;padding:60px 0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.card{background:white;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 10px 30px #0002}
-.card img{width:100%;height:230px;object-fit:cover}
-.body{padding:22px}
-.tag{color:#d4380c;font-weight:bold;text-transform:uppercase;font-size:.8rem}
-@media(max-width:800px){.grid{grid-template-columns:1fr}}
+
+.blog-grid{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+max-width:1200px;
+
+margin:50px auto;
+
+}
+
+
+.blog-card{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+.blog-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+
+.blog-card-content{
+
+padding:25px;
+
+}
+
+
+.blog-card-content span{
+
+color:#d94b1f;
+
+font-weight:bold;
+
+font-size:14px;
+
+}
+
+
+.blog-card h3{
+
+font-size:24px;
+
+}
+
+
+.blog-card a{
+
+display:inline-block;
+
+margin-top:15px;
+
+background:#d94b1f;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+}
+
+
 </style>
+
+
 </head>
+
+
 <body>
-<main class="wrap">
-<section class="hero">
-<p class="tag">Blog oficial</p>
-<h1>El blog de La Empanada Guerrera</h1>
-<p>Historias de producto, recetas, preparación, negocios y todo lo que hay detrás de nuestras empanadas colombianas.</p>
+
+
+<header>
+
+<h1>
+El blog de La Empanada Guerrera
+</h1>
+
+<p>
+Historias, productos, recetas y todo lo que hay detrás de nuestras empanadas.
+</p>
+
+
+</header>
+
+
+
+<main>
+
+
+<section 
+id="lista-blog"
+class="blog-grid">
 </section>
 
-<section class="grid">
 
-<a class="card" href="empanada-la-berraca.html">
-<img src="../assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="La Berraca empanada papa carne">
-<div class="body">
-<div class="tag">Producto estrella</div>
-<h2>La Berraca: empanada papa carne con sabor guerrero</h2>
-<p>Conoce la historia, ingredientes, preparación y oportunidades para vender este producto.</p>
-</div>
-</a>
-
-<a class="card" href="aji-de-frutas-tropicales.html">
-<img src="../assets/aji-frutas-tropicales-empanadas.webp" alt="Ají de frutas tropicales">
-<div class="body">
-<div class="tag">Nuestra historia</div>
-<h2>El ají que nos hace diferentes</h2>
-<p>La receta propia que acompaña nuestras empanadas.</p>
-</div>
-</a>
-
-</section>
 </main>
+
+
+
+<script src="blog.js"></script>
+
+
+<script>
+
+cargarBlog("#lista-blog");
+
+</script>
+
+
 </body>
+
 </html>
