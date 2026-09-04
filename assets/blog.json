@@ -1,0 +1,20 @@
+{
+  "articulos": [
+    {
+      "titulo": "La Berraca: empanada de papa y carne con sabor guerrero",
+      "url": "/blog/empanada-la-berraca.html",
+      "imagen": "/assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp",
+      "fecha": "2026-09-04",
+      "categoria": "Productos",
+      "descripcion": "Conoce La Berraca, la empanada de papa y carne de La Empanada Guerrera con 30% carne y 70% papa. Ideal para hogar, eventos y negocios."
+    },
+    {
+      "titulo": "El ají de frutas tropicales que nos hace diferentes",
+      "url": "/blog/aji-de-frutas-tropicales.html",
+      "imagen": "/assets/aji-frutas-tropicales-empanadas.webp",
+      "fecha": "2026-08-20",
+      "categoria": "Nuestra historia",
+      "descripcion": "Descubre la historia de nuestro ají de frutas tropicales, una receta propia que acompaña nuestras empanadas."
+    }
+  ]
+}
