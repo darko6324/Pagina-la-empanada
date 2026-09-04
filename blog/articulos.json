@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "La Berraca: empanada papa carne 30% carne y 70% papa | La Empanada Guerrera",
+    "descripcion": "Conoce La Berraca, la empanada papa carne de La Empanada Guerrera. Producto de calidad con 30% carne y 70% papa, ideal para hogares, eventos y negocios.",
+    "imagen": "/assets/logo-la-empanada-guerrera.webp",
+    "fecha": "2026-09-04",
+    "url": "empanada-la-berraca.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "La Tesa: empanada papa carne con 60% carne y 40% papa | La Empanada Guerrera",
+    "descripcion": "Conoce La Tesa, la empanada papa carne de La Empanada Guerrera con mayor porcentaje de carne: 60% carne y 40% papa. Ideal para hogares, eventos y negocios.",
+    "imagen": "/assets/logo-la-empanada-guerrera.webp",
+    "fecha": "2026-09-04",
+    "url": "empanada-la-tesa.html",
+    "categoria": "Blog"
+  }
+]
