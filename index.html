@@ -677,34 +677,21 @@
 </section>
 
 <!-- ===== BLOG ===== -->
-<section class="block" id="blog" aria-label="Blog de La Empanada Guerrera">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Contenido guerrero</span>
-      <h2>Historias, recetas y secretos de nuestras empanadas</h2>
-      <p>Conoce nuestros productos, procesos, consejos para negocios y todo lo que hay detrás de La Empanada Guerrera.</p>
-      <div class="rope"></div>
-    </div>
+<section class="block" id="blog">
+<div class="wrap">
+<div class="sec-head">
+<span class="eyebrow">Historias guerreras</span>
+<h2>Blog de La Empanada Guerrera</h2>
+<p>Productos, historias, procesos y consejos para hogares y negocios.</p>
+<div class="rope"></div>
+</div>
 
-    <div class="menu-grid">
+<div id="blog-dinamico" class="menu-grid"></div>
 
-      <a class="card" href="blog/empanada-la-berraca.html" style="text-decoration:none;color:inherit;">
-        <div class="card-img">
-          <img loading="lazy" decoding="async" src="assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="La Berraca empanada papa carne de La Empanada Guerrera">
-        </div>
-        <div class="card-body">
-          <div class="cname">La Berraca: la empanada papa carne con historia</div>
-          <div class="cfill">Producto estrella · Septiembre 2026</div>
-          <p>Descubre el significado de La Berraca, su composición 30% carne y 70% papa, cómo prepararla y por qué es ideal para hogares y negocios.</p>
-        </div>
-      </a>
-
-    </div>
-
-    <div style="text-align:center;margin-top:35px;">
-      <a class="btn btn-gold" href="/blog/">Ver todos los artículos</a>
-    </div>
-  </div>
+<div style="text-align:center;margin-top:30px">
+<a class="btn btn-gold" href="/blog/">Ver todos los artículos</a>
+</div>
+</div>
 </section>
 
 <!-- ===== EQUIPO ===== -->
@@ -979,5 +966,55 @@
     window.addEventListener('resize',function(){if(window.innerWidth>900)alternar(false);});
   })();
 </script>
+
+<!-- BLOG AUTOMÁTICO -->
+<script>
+fetch('/blog/articulos.json')
+.then(r=>r.json())
+.then(posts=>{
+const cont=document.querySelector('#blog-automatico');
+if(!cont)return;
+
+cont.innerHTML=posts.slice(0,3).map(p=>`
+<div class="card">
+<img src="${p.imagen}" alt="${p.titulo}" loading="lazy">
+<div class="card-body">
+<h3>${p.titulo}</h3>
+<p>${p.descripcion || ''}</p>
+<a class="btn btn-chili" href="/blog/${p.url}">
+Leer artículo
+</a>
+</div>
+</div>`).join('');
+});
+</script>
+
 </body>
 </html>
+
+<script>
+async function cargarBlogInicio(){
+ try{
+  const r = await fetch('/blog/articulos.json');
+  const posts = await r.json();
+  posts.sort((a,b)=>new Date(b.fecha)-new Date(a.fecha));
+
+  const cont=document.querySelector('#blog-dinamico');
+  if(!cont) return;
+
+  cont.innerHTML=posts.slice(0,3).map(p=>`
+    <a class="card" href="/blog/${p.url}">
+      <div class="card-img">
+        <img loading="lazy" src="${p.imagen}" alt="${p.titulo}">
+      </div>
+      <div class="card-body">
+        <div class="cname">${p.titulo}</div>
+        <div class="cfill">${p.categoria||'Blog'}</div>
+        <p>${p.descripcion||''}</p>
+      </div>
+    </a>
+  `).join('');
+ }catch(e){console.log(e)}
+}
+cargarBlogInicio();
+</script>
