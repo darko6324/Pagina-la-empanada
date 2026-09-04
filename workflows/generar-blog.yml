@@ -1,0 +1,44 @@
+name: Generar Blog Automático
+
+on:
+  push:
+    paths:
+      - "blog/*.html"
+      - "scripts/generar-blog.js"
+
+permissions:
+  contents: write
+
+
+jobs:
+
+  generar:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Descargar repositorio
+      uses: actions/checkout@v4
+
+
+    - name: Configurar Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+
+    - name: Generar JSON
+      run: node scripts/generar-blog.js
+
+
+    - name: Guardar cambios
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+
+        git add blog/articulos.json
+
+        git commit -m "Actualizar artículos del blog automático" || exit 0
+
+        git push
