@@ -116,21 +116,30 @@
   .rope{height:6px; width:64px; margin:14px auto 0; border-radius:3px;
     background:repeating-linear-gradient(135deg,var(--leather) 0 6px, var(--gold-deep) 6px 12px);}
 
-  /* ---------- FRENTES (3 lines) ---------- */
-  .frentes{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
-  .frente{background:#fff; border:1px solid rgba(26,14,5,.12); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 1px 2px rgba(26,14,5,.05), 0 12px 28px -14px rgba(26,14,5,.28); transition:transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s ease;}
-  .frente:hover{transform:translateY(-6px); box-shadow:0 2px 4px rgba(26,14,5,.06), 0 26px 46px -18px rgba(26,14,5,.4);}
-  .frente-top{padding:26px 24px 18px; position:relative;}
-  .frente-num{font-family:'Bangers'; font-size:2.4rem; color:var(--hueso-2); position:absolute; top:12px; right:18px; line-height:1;}
-  .frente-ic{width:64px; height:64px; margin-bottom:14px;}
-  .frente h3{font-size:1.35rem; margin-bottom:4px;}
-  .frente .tag{font-family:'Kanit'; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; font-size:.7rem; color:var(--chili);}
-  .frente-body{padding:0 24px 24px; flex:1; display:flex; flex-direction:column;}
-  .frente-body p{font-size:.94rem; color:#4a3620; margin:10px 0 16px;}
-  .frente ul{list-style:none; padding:0; margin:0 0 20px;}
-  .frente li{font-size:.9rem; padding-left:22px; position:relative; margin-bottom:7px;}
-  .frente li:before{content:"›"; position:absolute; left:4px; color:var(--chili); font-weight:700;}
-  .frente .btn{margin-top:auto; justify-content:center;}
+  /* ---------- FRENTES (5 modelos de negocio) ---------- */
+  .frentes{display:flex; flex-wrap:wrap; justify-content:center; gap:24px;}
+  .frente{
+    flex:0 1 calc((100% - 48px)/3); min-width:290px;
+    position:relative; overflow:hidden; display:flex; flex-direction:column;
+    background:linear-gradient(180deg,#fff 0%,#fffdf8 100%);
+    border:1px solid rgba(26,14,5,.10); border-radius:24px;
+    box-shadow:0 10px 24px -18px rgba(26,14,5,.28), 0 2px 6px rgba(26,14,5,.04);
+    transition:transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s ease, border-color .28s ease;
+  }
+  .frente::before{content:""; position:absolute; left:0; right:0; top:0; height:4px; background:linear-gradient(90deg,var(--gold),var(--chili)); opacity:.95;}
+  .frente:hover{transform:translateY(-7px); border-color:rgba(212,56,12,.22); box-shadow:0 24px 46px -20px rgba(26,14,5,.34), 0 5px 14px rgba(26,14,5,.06);}
+  .frente-top{padding:28px 26px 14px; position:relative;}
+  .frente-num{font-family:'Bangers'; font-size:3.2rem; color:rgba(175,121,41,.14); position:absolute; top:18px; right:22px; line-height:1; letter-spacing:1px;}
+  .frente-icon{width:58px; height:58px; border-radius:16px; display:grid; place-items:center; margin-bottom:18px; background:linear-gradient(145deg,#fff4cf,#f7b314); color:var(--espresso); border:1px solid rgba(175,121,41,.28); box-shadow:0 10px 24px -16px rgba(175,121,41,.8); transition:transform .28s ease;}
+  .frente:hover .frente-icon{transform:translateY(-2px) rotate(-2deg);}
+  .frente-icon svg{width:27px; height:27px; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+  .frente h3{font-size:1.28rem; margin:5px 0 0; max-width:16ch;}
+  .frente .tag{font-family:'Kanit'; font-weight:600; letter-spacing:1.7px; text-transform:uppercase; font-size:.68rem; color:var(--chili);}
+  .frente-body{padding:0 26px 26px; flex:1; display:flex; flex-direction:column;}
+  .frente-body p{font-size:.93rem; color:#5a452d; margin:14px 0 20px; line-height:1.65;}
+  .frente .btn{margin-top:auto; justify-content:center; border-radius:12px; min-height:52px;}
+  .frente .btn-gold{background:linear-gradient(180deg,#ffc127,#f7b314);}
+  @media(max-width:1100px){.frente{flex-basis:calc((100% - 24px)/2);}}
 
   /* ---------- CATALOGO ---------- */
   .cat-tabs{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;}
@@ -263,7 +272,8 @@
     .hero-mascot{order:-1;} .hero-mascot img{max-width:300px;}
     .hero-cta,.hero-badges{justify-content:center;}
     .hero p.lead{margin-left:auto; margin-right:auto;}
-    .pill-grid,.frentes,.menu-grid{grid-template-columns:1fr;}
+    .pill-grid,.menu-grid{grid-template-columns:1fr;}
+    .frente{flex-basis:100%; min-width:0;}
     .aji-grid{grid-template-columns:1fr;}
     .team{grid-template-columns:repeat(2,1fr);}
     .foot-grid{grid-template-columns:1fr 1fr;}
@@ -578,15 +588,15 @@
     </div>
     <div class="frentes">
 
-      <div class="frente"><div class="frente-top"><span class="frente-num">01</span><span class="tag">Punto de venta</span><h3>Comer una Guerrera</h3></div><div class="frente-body"><p>Empanadas fritas al momento, dedos rellenos, panzerottis, bebidas, ají y salsas.</p><a class="btn btn-gold" href="#ubicacion">Encuentra tu punto</a></div></div>
+      <div class="frente"><div class="frente-top"><span class="frente-num">01</span><div class="frente-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16"/><path d="M5 10V6h14v4"/><path d="M6 10v8h12v-8"/><path d="M9 18v-4h6v4"/><path d="M7 6l1-2h8l1 2"/></svg></div><span class="tag">Punto de venta</span><h3>Comer una Guerrera</h3></div><div class="frente-body"><p>Empanadas fritas al momento, dedos rellenos, panzerottis, bebidas, ají y salsas.</p><a class="btn btn-gold" href="#ubicacion">Encuentra tu punto</a></div></div>
 
-      <div class="frente"><div class="frente-top"><span class="frente-num">02</span><span class="tag">Hogar</span><h3>Tener Guerreras en casa</h3></div><div class="frente-body"><p>El sabor de La Empanada Guerrera listo para preparar cuando quieras.</p><a class="btn btn-gold" href="/hogar">Pedir congeladas</a></div></div>
+      <div class="frente"><div class="frente-top"><span class="frente-num">02</span><div class="frente-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9 20v-6h6v6"/></svg></div><span class="tag">Hogar</span><h3>Tener Guerreras en casa</h3></div><div class="frente-body"><p>El sabor de La Empanada Guerrera listo para preparar cuando quieras.</p><a class="btn btn-gold" href="/hogar">Pedir congeladas</a></div></div>
 
-      <div class="frente"><div class="frente-top"><span class="frente-num">03</span><span class="tag">Negocios</span><h3>Vender Guerreras</h3></div><div class="frente-body"><p>Producto congelado para restaurantes, cafeterías, tiendas y emprendedores.</p><a class="btn btn-gold" href="/negocios">Quiero vender</a></div></div>
+      <div class="frente"><div class="frente-top"><span class="frente-num">03</span><div class="frente-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16l-1 13H5L4 7Z"/><path d="M8 7a4 4 0 0 1 8 0"/><path d="M8 12h8"/></svg></div><span class="tag">Negocios</span><h3>Vender Guerreras</h3></div><div class="frente-body"><p>Producto congelado para restaurantes, cafeterías, tiendas y emprendedores.</p><a class="btn btn-gold" href="/negocios">Quiero vender</a></div></div>
 
-      <div class="frente"><div class="frente-top"><span class="frente-num">04</span><span class="tag">Eventos</span><h3>Celebrar con Guerreras</h3></div><div class="frente-body"><p>Llevamos producto e insumos para que tu evento sea completo.</p><a class="btn btn-gold" href="/eventos">Cotizar evento</a></div></div>
+      <div class="frente"><div class="frente-top"><span class="frente-num">04</span><div class="frente-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v7"/><path d="M8.5 6.5 12 10l3.5-3.5"/><path d="M5 14h14"/><path d="M6 14v6h12v-6"/><path d="M3 11l2 3 2-3 2 3 3-4 3 4 2-3 2 3 2-3"/></svg></div><span class="tag">Eventos</span><h3>Celebrar con Guerreras</h3></div><div class="frente-body"><p>Llevamos producto e insumos para que tu evento sea completo.</p><a class="btn btn-gold" href="/eventos">Cotizar evento</a></div></div>
 
-      <div class="frente"><div class="frente-top"><span class="frente-num">05</span><span class="tag">Franquicia</span><h3>Crear una nueva Guerrera</h3></div><div class="frente-body"><p>Te acompañamos en montaje, operación, proveedores y capacitación.</p><a class="btn btn-gold" href="/franquicias">Conocer franquicia</a></div></div>
+      <div class="frente"><div class="frente-top"><span class="frente-num">05</span><div class="frente-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20V8h8v12"/><path d="M13 12h6v8"/><path d="M8 11h2M8 14h2M8 17h2"/><path d="M16 15h1.5M16 18h1.5"/><path d="M7 8V5h4v3"/><path d="M15 8l2-2 2 2"/></svg></div><span class="tag">Franquicia</span><h3>Crear una nueva Guerrera</h3></div><div class="frente-body"><p>Te acompañamos en montaje, operación, proveedores y capacitación.</p><a class="btn btn-gold" href="/franquicias">Conocer franquicia</a></div></div>
 
     </div>
   </div>
