@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo+Black&family=Poppins:wght@300;400;500;600&family=Kanit:wght@300;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo+Black&family=Poppins:wght@300;400;500;600&family=Kanit:wght@300;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="/assets/paginas.css?v=20261016">
+<link rel="stylesheet" href="/assets/paginas.css?v=20261016b">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -314,7 +314,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
       <span class="eyebrow">Al por mayor · Para negocios</span>
       <h1>Empanadas congeladas <em>al por mayor</em> para tu negocio</h1>
       <p class="lead">Vende empanadas de calidad sin montar cocina de producción. Te llevamos producto congelado, estandarizado y con respaldo sanitario para que solo tengas que freír y vender. Ideal para restaurantes, cafeterías, tiendas, colegios y casinos en Bogotá.</p>
-      <div class="p-hero-cta"><a class="btn btn-chili" href="https://wa.me/573239102290?text=Hola%2C%20tengo%20un%20negocio%20y%20quiero%20precios%20al%20por%20mayor.%0ATipo%20de%20negocio%3A%20%0ABarrio%20o%20direcci%C3%B3n%3A%20%0AProductos%20que%20me%20interesan%3A%20" target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{'boton':'negocios_hero'});">Quiero precios para mi negocio</a><a class="btn btn-ghost" href="#precios">Ver precios por caja</a></div>
+      <div class="p-hero-cta"><a class="btn btn-chili" href="https://wa.me/573239102290?text=Hola%2C%20tengo%20un%20negocio%20y%20quiero%20precios%20al%20por%20mayor.%0ATipo%20de%20negocio%3A%20%0ABarrio%20o%20direcci%C3%B3n%3A%20%0AProductos%20que%20me%20interesan%3A%20" target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{'boton':'negocios_hero'});">Quiero precios para mi negocio</a><a class="btn btn-ghost" href="#simulador">Simular mi ganancia</a></div>
       <p class="cta-nota">Te respondemos por WhatsApp con cotización, pedido mínimo y días de entrega en tu zona.</p>
       <div class="datos"><span class="dato">Sin cocina de producción</span><span class="dato">Calidad constante</span><span class="dato">Factura electrónica</span></div>
     </div>
@@ -358,6 +358,122 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
     <div class="cta-centro"><a class="btn btn-chili" href="https://wa.me/573239102290?text=Hola%2C%20tengo%20un%20negocio%20y%20quiero%20precios%20al%20por%20mayor.%0ATipo%20de%20negocio%3A%20%0ABarrio%20o%20direcci%C3%B3n%3A%20%0AProductos%20que%20me%20interesan%3A%20" target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{'boton':'negocios_lista'});">Pedir cotización con esta lista</a><p class="cta-nota">¿No sabes qué pedir? Te recomendamos lo que más rota en negocios como el tuyo.</p></div>
   </div>
 </section>
+
+<section class="block alt" id="simulador" aria-label="Simulador de ganancia">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Simulador de ganancia</span><h2>¿Cuánto ganas vendiendo Guerreras?</h2><p>Pon cuántas cajas comprarías al mes y a cuánto venderías cada unidad. El simulador calcula tu inversión, tus ventas y tu ganancia al instante.</p><div class="rope"></div></div>
+    <div class="sim">
+      <div class="tabla-wrap"><table class="sim-tabla">
+        <thead><tr><th>Producto</th><th>Cajas al mes</th><th>Vendes c/u a</th><th>Ganancia</th></tr></thead>
+        <tbody>
+        <tr data-i="0">
+          <td><b>Empanada papa y carne</b><small>90 g · caja x30 · $45.000 ($1.500 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Empanada papa y carne">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="4" aria-label="Cajas al mes de Empanada papa y carne"><button type="button" class="mas" aria-label="Más cajas de Empanada papa y carne">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="2500" aria-label="Precio de venta por unidad de Empanada papa y carne"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="1">
+          <td><b>Empanada papa y más carne</b><small>90 g · caja x30 · $51.000 ($1.700 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Empanada papa y más carne">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Empanada papa y más carne"><button type="button" class="mas" aria-label="Más cajas de Empanada papa y más carne">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3000" aria-label="Precio de venta por unidad de Empanada papa y más carne"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="2">
+          <td><b>Empanada papa y pollo</b><small>80 g · caja x20 · $34.000 ($1.700 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Empanada papa y pollo">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="2" aria-label="Cajas al mes de Empanada papa y pollo"><button type="button" class="mas" aria-label="Más cajas de Empanada papa y pollo">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3000" aria-label="Precio de venta por unidad de Empanada papa y pollo"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="3">
+          <td><b>Empanada de queso</b><small>50 g · caja x10 · $17.000 ($1.700 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Empanada de queso">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="2" aria-label="Cajas al mes de Empanada de queso"><button type="button" class="mas" aria-label="Más cajas de Empanada de queso">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="2800" aria-label="Precio de venta por unidad de Empanada de queso"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="4">
+          <td><b>Coctelera papa y carne</b><small>30 g · caja x100 · $80.000 ($800 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Coctelera papa y carne">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Coctelera papa y carne"><button type="button" class="mas" aria-label="Más cajas de Coctelera papa y carne">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="1200" aria-label="Precio de venta por unidad de Coctelera papa y carne"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="5">
+          <td><b>Dedo relleno de bocadillo y queso</b><small>90 g · caja x10 · $20.000 ($2.000 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Dedo relleno de bocadillo y queso">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Dedo relleno de bocadillo y queso"><button type="button" class="mas" aria-label="Más cajas de Dedo relleno de bocadillo y queso">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3500" aria-label="Precio de venta por unidad de Dedo relleno de bocadillo y queso"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="6">
+          <td><b>Dedo relleno hawaiano</b><small>90 g · caja x10 · $20.000 ($2.000 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Dedo relleno hawaiano">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Dedo relleno hawaiano"><button type="button" class="mas" aria-label="Más cajas de Dedo relleno hawaiano">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3500" aria-label="Precio de venta por unidad de Dedo relleno hawaiano"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="7">
+          <td><b>Dedo relleno de solo queso</b><small>90 g · caja x10 · $20.000 ($2.000 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Dedo relleno de solo queso">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Dedo relleno de solo queso"><button type="button" class="mas" aria-label="Más cajas de Dedo relleno de solo queso">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3500" aria-label="Precio de venta por unidad de Dedo relleno de solo queso"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="8">
+          <td><b>Dedo relleno de arequipe y queso</b><small>90 g · caja x10 · $21.000 ($2.100 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Dedo relleno de arequipe y queso">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Dedo relleno de arequipe y queso"><button type="button" class="mas" aria-label="Más cajas de Dedo relleno de arequipe y queso">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="3500" aria-label="Precio de venta por unidad de Dedo relleno de arequipe y queso"></div></td>
+          <td class="gan">—</td>
+        </tr><tr data-i="9">
+          <td><b>Panzerotti ranchero, hawaiano o de queso</b><small>100 g · caja x6 · $25.000 ($4.167 c/u)</small></td>
+          <td><div class="num"><button type="button" class="menos" aria-label="Menos cajas de Panzerotti ranchero, hawaiano o de queso">−</button><input type="number" min="0" step="1" inputmode="numeric" class="cajas" value="0" aria-label="Cajas al mes de Panzerotti ranchero, hawaiano o de queso"><button type="button" class="mas" aria-label="Más cajas de Panzerotti ranchero, hawaiano o de queso">+</button></div></td>
+          <td><div class="pesos"><span>$</span><input type="number" min="0" step="100" inputmode="numeric" class="venta" value="6000" aria-label="Precio de venta por unidad de Panzerotti ranchero, hawaiano o de queso"></div></td>
+          <td class="gan">—</td>
+        </tr>
+        </tbody>
+      </table></div>
+      <div class="sim-otros">
+        <label for="sim-otros">Otros costos por unidad (aceite, empaque, servilleta)</label>
+        <div class="pesos"><span>$</span><input id="sim-otros" type="number" min="0" step="50" inputmode="numeric" value="300"></div>
+        <small>Es un estimado: ajústalo a tu negocio.</small>
+      </div>
+      <div class="sim-res" aria-live="polite">
+        <div class="kpi"><span>Unidades al mes</span><b id="r-und">—</b></div>
+        <div class="kpi"><span>Inversión en producto</span><b id="r-inv">—</b></div>
+        <div class="kpi"><span>Ventas al mes</span><b id="r-ven">—</b></div>
+        <div class="kpi"><span>Otros costos</span><b id="r-otr">—</b></div>
+        <div class="kpi grande"><span>Ganancia al mes</span><b id="r-gan">—</b><em id="r-mar"></em></div>
+        <div class="kpi"><span>Ganancia por día (26 días)</span><b id="r-dia">—</b></div>
+      </div>
+      <div class="sim-cta">
+        <a class="btn btn-wa" id="sim-wa" href="https://wa.me/573239102290" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3 9 6.7 8.8 6.8 8.6 6.8h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.3 5.2 4.6 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg> Pedir esta cotización por WhatsApp</a>
+        <p class="cta-nota">Te enviamos el pedido armado con estas cantidades. Los precios de venta son tuyos: el simulador solo te ayuda a hacer cuentas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var D=[{"n": "Empanada papa y carne", "g": "90 g", "u": 30, "p": 45000, "v": 2500, "c": 4}, {"n": "Empanada papa y más carne", "g": "90 g", "u": 30, "p": 51000, "v": 3000, "c": 0}, {"n": "Empanada papa y pollo", "g": "80 g", "u": 20, "p": 34000, "v": 3000, "c": 2}, {"n": "Empanada de queso", "g": "50 g", "u": 10, "p": 17000, "v": 2800, "c": 2}, {"n": "Coctelera papa y carne", "g": "30 g", "u": 100, "p": 80000, "v": 1200, "c": 0}, {"n": "Dedo relleno de bocadillo y queso", "g": "90 g", "u": 10, "p": 20000, "v": 3500, "c": 0}, {"n": "Dedo relleno hawaiano", "g": "90 g", "u": 10, "p": 20000, "v": 3500, "c": 0}, {"n": "Dedo relleno de solo queso", "g": "90 g", "u": 10, "p": 20000, "v": 3500, "c": 0}, {"n": "Dedo relleno de arequipe y queso", "g": "90 g", "u": 10, "p": 21000, "v": 3500, "c": 0}, {"n": "Panzerotti ranchero, hawaiano o de queso", "g": "100 g", "u": 6, "p": 25000, "v": 6000, "c": 0}];
+  var tb=document.querySelector('.sim-tabla tbody'), otros=document.getElementById('sim-otros'), wa=document.getElementById('sim-wa');
+  function f(n){return '$'+Math.round(n).toLocaleString('es-CO');}
+  function num(el){var v=parseFloat(el.value);return isNaN(v)||v<0?0:v;}
+  function calc(){
+    var o=num(otros), U=0, I=0, V=0, lineas=[];
+    tb.querySelectorAll('tr').forEach(function(tr){
+      var d=D[tr.dataset.i], c=num(tr.querySelector('.cajas')), v=num(tr.querySelector('.venta'));
+      var u=c*d.u, inv=c*d.p, ven=u*v, g=ven-inv-u*o;
+      U+=u; I+=inv; V+=ven;
+      var td=tr.querySelector('.gan'); td.textContent=c?f(g):'—'; td.className='gan'+(c&&g<0?' neg':'');
+      if(c) lineas.push('- '+c+(c==1?' caja':' cajas')+' de '+d.n+' (x'+d.u+')');
+    });
+    var O=U*o, G=V-I-O;
+    document.getElementById('r-und').textContent=U.toLocaleString('es-CO');
+    document.getElementById('r-inv').textContent=f(I);
+    document.getElementById('r-ven').textContent=f(V);
+    document.getElementById('r-otr').textContent=f(O);
+    var rg=document.getElementById('r-gan'); rg.textContent=f(G); rg.className=G<0?'neg':'';
+    document.getElementById('r-mar').textContent=V?('Margen: '+Math.round(G/V*100)+' % de tus ventas'):'';
+    document.getElementById('r-dia').textContent=f(G/26);
+    var msg='Hola, usé el simulador de la página y quiero cotizar este pedido mensual para mi negocio:\n'+(lineas.length?lineas.join('\n'):'(aún no elijo productos)')+'\nNombre del negocio: \nBarrio: ';
+    wa.href='https://wa.me/573239102290?text='+encodeURIComponent(msg);
+  }
+  tb.addEventListener('input',calc); otros.addEventListener('input',calc);
+  tb.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    var inp=b.parentNode.querySelector('input'); inp.value=Math.max(0,num(inp)+(b.classList.contains('mas')?1:-1)); calc();
+  });
+  wa.addEventListener('click',function(){ if(window.gtag) gtag('event','click_whatsapp',{'boton':'negocios_simulador'}); });
+  calc();
+})();
+</script>
 <section class="block alt">
   <div class="wrap split">
     <div class="split-img"><img src="/assets/3.-Echada-Pa-lante-Empanada-papa-pollo.webp" alt="Empanadas recién fritas de La Empanada Guerrera" width="1254" height="1254" decoding="async" loading="lazy"></div>

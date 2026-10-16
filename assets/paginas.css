@@ -369,3 +369,50 @@ table.precios{min-width:700px;}
 .p-hero-img.heroe-personaje{background:#ece8e3;}
 .p-hero-img.heroe-personaje img{aspect-ratio:auto; object-fit:contain; width:100%; max-height:560px;}
 .personaje.solo{grid-template-columns:1fr;}
+
+/* SIMULADOR DE GANANCIA */
+.sim{background:#fff; border:2px solid var(--gold); border-radius:22px; padding:22px; max-width:1000px; margin:0 auto; box-shadow:0 24px 50px -30px rgba(26,14,5,.45);}
+.sim .tabla-wrap{border:0; max-width:none;}
+.sim-tabla{width:100%; border-collapse:collapse; font-size:.92rem;}
+.sim-tabla th{font-family:'Kanit',sans-serif; font-weight:600; letter-spacing:1px; text-transform:uppercase; font-size:.72rem; text-align:left; background:var(--espresso); color:var(--gold); padding:12px 14px;}
+.sim-tabla th:last-child,.sim-tabla td.gan{text-align:right;}
+.sim-tabla td{padding:10px 14px; border-top:1px solid rgba(26,14,5,.08); vertical-align:middle;}
+.sim-tabla tr:nth-child(even) td{background:#fbf8ef;}
+.sim-tabla td small{display:block; font-size:.76rem; color:var(--leather); margin-top:2px;}
+.sim-tabla td.gan{font-family:'Archivo Black',sans-serif; white-space:nowrap;}
+.sim .neg{color:var(--chili);}
+.num{display:inline-flex; align-items:center; border:1px solid rgba(26,14,5,.25); border-radius:10px; overflow:hidden; background:#fff;}
+.num button{width:34px; height:38px; border:0; background:var(--hueso); font-size:1.2rem; cursor:pointer; color:var(--espresso);}
+.num button:hover{background:var(--gold);}
+.num input{width:52px; height:38px; border:0; text-align:center; font-size:1rem; font-family:inherit; -moz-appearance:textfield;}
+.pesos{display:inline-flex; align-items:center; border:1px solid rgba(26,14,5,.25); border-radius:10px; padding:0 10px; background:#fff;}
+.pesos span{color:var(--leather); font-weight:500;}
+.pesos input{width:84px; height:38px; border:0; font-size:1rem; font-family:inherit; padding-left:4px; -moz-appearance:textfield;}
+.sim input::-webkit-outer-spin-button,.sim input::-webkit-inner-spin-button{-webkit-appearance:none; margin:0;}
+.sim input:focus{outline:2px solid var(--gold); outline-offset:1px;}
+.sim-otros{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin:18px 4px 0; font-size:.9rem;}
+.sim-otros label{font-family:'Kanit',sans-serif; font-weight:600;}
+.sim-otros small{color:var(--leather);}
+.sim-res{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:20px;}
+.kpi{background:var(--hueso); border-radius:14px; padding:14px 16px;}
+.kpi span{display:block; font-family:'Kanit',sans-serif; font-size:.74rem; letter-spacing:1px; text-transform:uppercase; color:var(--leather);}
+.kpi b{font-family:'Archivo Black',sans-serif; font-weight:400; font-size:1.3rem;}
+.kpi.grande{background:var(--espresso); color:#fff; grid-row:span 2; display:flex; flex-direction:column; justify-content:center;}
+.kpi.grande span{color:var(--gold);}
+.kpi.grande b{font-size:2.1rem; color:#fff;}
+.kpi.grande b.neg{color:#ff9b7a;}
+.kpi.grande em{font-style:normal; font-family:'Kanit',sans-serif; color:#e7dfc9; font-size:.86rem; margin-top:4px;}
+.sim-cta{text-align:center; margin-top:22px;}
+@media(max-width:700px){
+  .sim{padding:14px;}
+  .sim-tabla thead{display:none;}
+  .sim-tabla tr{display:grid; grid-template-columns:1fr 1fr; gap:10px 12px; padding:14px 6px; border-top:1px solid rgba(26,14,5,.1);}
+  .sim-tabla tr:nth-child(even){background:#fbf8ef;}
+  .sim-tabla td{padding:0; border:0; background:none !important;}
+  .sim-tabla td:first-child,.sim-tabla td.gan{grid-column:1 / -1;}
+  .sim-tabla td.gan{text-align:left;}
+  .sim-tabla td.gan::before{content:"Ganancia: "; font-family:'Kanit',sans-serif; font-weight:500; color:var(--leather);}
+  .sim-res{grid-template-columns:1fr 1fr;}
+  .kpi.grande{grid-column:1 / -1; grid-row:auto; order:-1;}
+  .pesos input{width:70px;}
+}
