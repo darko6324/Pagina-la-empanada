@@ -1,20 +1,128 @@
 [
   {
-    "titulo": "La Berraca: la empanada papa carne que representa fuerza y sabor colombiano",
-    "descripcion": "Conoce La Berraca, la empanada papa carne de La Empanada Guerrera. Producto de calidad con 30% carne y 70% papa, ideal para hogares, eventos y negocios.",
+    "titulo": "Cómo freír empanadas congeladas para que queden crocantes",
+    "descripcion": "Cómo freír empanadas congeladas para que queden crocantes: temperatura del aceite (160–165 °C), tiempos por tipo de empanada y los 5 errores que las dañan.",
     "imagen": "/assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp",
-    "fecha": "2026-09-04",
-    "modificado": "2026-09-04",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "como-freir-empanadas-congeladas.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "¿Cuántas empanadas por persona? Calculadora para tu evento",
+    "descripcion": "Calcula cuántas empanadas o cocteleras necesitas por persona para tu evento, reunión, novena o refrigerio. Calculadora gratis y recomendaciones por tipo de evento.",
+    "imagen": "/assets/5.-Las-del-desvare-empanadas-cocteleras-papa-carne-La-empanada-Guerrera.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "cuantas-empanadas-por-persona.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "¿Cuánto se gana vendiendo empanadas? Márgenes por caja",
+    "descripcion": "Cuánto se gana vendiendo empanadas congeladas en una tienda o cafetería: costo por unidad, ejemplo de precio de venta y margen por caja con precios reales.",
+    "imagen": "/assets/17.-Empanada-congelada-coctelera-papa-carne-La-Empanada-Guerrera.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "cuanto-se-gana-vendiendo-empanadas.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "El Goloso: el dedo de arequipe y queso para los antojados",
+    "descripcion": "Dedo relleno de arequipe y queso para los antojados. Por qué se llama así, su personaje en Empanovelas, precios y cómo pedirlo.",
+    "imagen": "/assets/personajes/el-goloso.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "dedo-relleno-arequipe-el-goloso.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "El Estirado: el dedo de queso más elegante de Bogotá",
+    "descripcion": "Dedo relleno de solo queso, el clásico. Por qué se llama así, su elegante personaje en Empanovelas, precios y cómo pedirlo.",
+    "imagen": "/assets/personajes/el-estirado.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "dedo-relleno-de-queso-el-estirado.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "El Consentido: el dedo de bocadillo y queso que todos quieren",
+    "descripcion": "Dedo relleno de bocadillo y queso, dulce y salado. Por qué se llama así, su personaje en Empanovelas, precios y cómo pedirlo.",
+    "imagen": "/assets/personajes/el-consentido.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "dedo-relleno-el-consentido.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "El Bacán: el dedo hawaiano que le cae bien a todo el mundo",
+    "descripcion": "Dedo relleno hawaiano de jamón, queso y piña. Por qué se llama así, su personaje tropical en Empanovelas, precios y cómo pedirlo.",
+    "imagen": "/assets/personajes/el-bacan.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "dedo-relleno-hawaiano-el-bacan.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "Las Camelladoras: la empanada de queso que se gana todo a pulso",
+    "descripcion": "Empanada de maíz rellena de queso, 50 g, lista en 4 minutos. Sus dos sellos explicados, ingredientes, tabla nutricional y su personaje.",
+    "imagen": "/assets/personajes/las-camelladoras.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "empanada-de-queso-las-camelladoras.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "La Berraca: la empanada de papa y carne que no se rinde",
+    "descripcion": "Empanada de maíz de papa y carne de res, 90 g, sin sellos de advertencia. Ingredientes, tabla nutricional, preparación y su personaje en Empanovelas.",
+    "imagen": "/assets/personajes/la-berraca.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
     "url": "empanada-la-berraca.html",
     "categoria": "Blog"
   },
   {
-    "titulo": "La Tesa: la empanada papa carne para quienes quieren más sabor a carne",
-    "descripcion": "Conoce La Tesa, la empanada papa carne de La Empanada Guerrera con mayor porcentaje de carne: 60% carne y 40% papa. Ideal para hogares, eventos y negocios.",
-    "imagen": "/assets/2.-La-tesa-empanada-papa-carne-carnuda-mas-porcentaje-de-carne-La-Empanada-Guerrera.webp",
-    "fecha": "2026-09-04",
-    "modificado": "2026-09-04",
+    "titulo": "La Echada pa' lante: la empanada de pollo que no se detiene",
+    "descripcion": "Empanada de maíz de papa y pollo, 80 g y la de más proteína. Por qué tiene sello de sodio, ingredientes, preparación y su personaje.",
+    "imagen": "/assets/personajes/la-echada-pa-lante.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "empanada-la-echada-pa-lante.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "La Tesa: la empanada carnuda para las que piensan antes de actuar",
+    "descripcion": "La empanada carnuda: más carne de res, masa de maíz, 90 g y sin sellos. Ingredientes, tabla nutricional, preparación y su personaje en Empanovelas.",
+    "imagen": "/assets/personajes/la-tesa.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
     "url": "empanada-la-tesa.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "Las del Desvare: las empanadas cocteleras que te sacan de apuros",
+    "descripcion": "Empanadas cocteleras de papa y carne de 30 g, sin sellos, ideales para eventos. Ingredientes, tabla nutricional, preparación y personaje.",
+    "imagen": "/assets/personajes/las-del-desvare.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "empanadas-cocteleras-las-del-desvare.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "Empanadas congeladas en air fryer: tiempos exactos",
+    "descripcion": "Cómo hacer empanadas congeladas en air fryer: 160 °C, 8 minutos para las de carne y queso y 20 minutos para las de pollo, volteándolas a la mitad.",
+    "imagen": "/assets/2.-La-tesa-empanada-papa-carne-carnuda-mas-porcentaje-de-carne-La-Empanada-Guerrera.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "empanadas-congeladas-en-air-fryer.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "Sellos de advertencia en empanadas: qué significan y por qué unas los llevan",
+    "descripcion": "Qué son los sellos negros de «Exceso en» en Colombia, cómo se calculan (sodio, grasas saturadas, azúcares, trans) y por qué unas empanadas los llevan y otras no.",
+    "imagen": "/assets/4.-Las-Camelladoras-Empanada-Queso-La-Empanada-Guerrera.webp",
+    "fecha": "2026-10-16",
+    "modificado": "2026-10-16",
+    "url": "sellos-de-advertencia-en-empanadas.html",
     "categoria": "Blog"
   }
 ]

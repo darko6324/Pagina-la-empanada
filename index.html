@@ -164,6 +164,8 @@
   .card .pz{font-family:'Archivo Black',sans-serif; font-size:1.12rem; color:var(--espresso); letter-spacing:.2px;}
   .card .pu{font-family:'Kanit',sans-serif; font-weight:500; font-size:.72rem; color:var(--leather); text-transform:uppercase; letter-spacing:1px;}
   .card .price-slot:has(.pz){color:inherit;}
+  .ver-ficha{display:inline-block; margin-top:12px; font-family:'Kanit',sans-serif; font-weight:600; font-size:.84rem; color:var(--chili); text-decoration:underline; text-underline-offset:3px;}
+  .horario-box{text-align:center; font-family:'Kanit',sans-serif; color:var(--leather); margin:-26px auto 22px; max-width:700px;}
   .panel{display:none;}
   .panel.on{display:block;}
 
@@ -333,7 +335,8 @@
    },
    "sameAs": [
     "https://www.instagram.com/laempanadaguerrera/",
-    "https://www.tiktok.com/@laempanadaguerrera"
+    "https://www.tiktok.com/@laempanadaguerrera",
+    "https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI"
    ],
    "hasMenu": {
     "@type": "Menu",
@@ -443,7 +446,27 @@
      }
     ]
    },
-   "hasMap": "https://www.google.com/maps/place/Cra.+76+%2380b-16,+Engativ%C3%A1,+Bogot%C3%A1,+Cundinamarca/@4.6982302,-74.0922446,17z"
+   "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "07:00",
+     "closes": "21:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Saturday",
+     "opens": "09:00",
+     "closes": "21:00"
+    }
+   ]
   },
   {
    "@type": "Service",
@@ -537,6 +560,7 @@
     <nav class="nav-links" aria-label="Menú principal">
       <a href="#frentes">Qué hacemos</a>
       <a href="#catalogo">Catálogo</a>
+      <a href="/productos/">Productos</a>
       <a href="#aji">El ají</a>
       <a href="#blog">Blog</a>
       <a href="#equipo">Nosotros</a>
@@ -675,15 +699,15 @@
     <div class="panel on" id="p-tienda">
       <h3 style="margin-bottom:22px;">Empanadas Guerreras</h3>
       <div class="menu-grid">
-<div class="card"><div class="card-img"><img width="1254" height="1254" src="assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="La Berraca, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Berraca</div><div class="cfill">Papa-Carne</div><p>Como esas mujeres berracas que se levantan primero y sacan a su familia adelante sin bajar la guardia. Papa y carne, con toda la fuerza de siempre.</p><div class="price-slot"><span class="pz">$3,700</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1122" height="1402" src="assets/2.-La-tesa-empanada-papa-carne-carnuda-mas-porcentaje-de-carne-La-Empanada-Guerrera.webp" alt="La Tesa, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Tesa</div><div class="cfill">Papa y Mayor porcentaje de Carne</div><p>La que piensa antes de actuar y no se deja ganar: mayor porcentaje de carne para las que resuelven todo con cabeza fría e inteligencia.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1254" height="1254" src="assets/3.-Echada-Pa-lante-Empanada-papa-pollo.webp" alt="La Echada pa' lante, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Echada pa' lante</div><div class="cfill">Papa-Pollo</div><p>Papa y pollo para las que no se detienen ante nada: siempre echadas pa'lante, pase lo que pase.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="791" height="746" src="assets/4.-Las-Camelladoras-Empanada-Queso-La-Empanada-Guerrera.webp" alt="Las Camelladoras, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Las Camelladoras</div><div class="cfill">Queso</div><p>Para los que camellan duro todos los días y se ganan cada logro a pulso. Rellena de queso derretido, como premio al esfuerzo.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1240" height="1148" src="assets/5.-Las-del-desvare-empanadas-cocteleras-papa-carne-La-empanada-Guerrera.webp" alt="Las del Desvare, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Las del Desvare</div><div class="cfill">Coctelera Papa-Carne</div><p>Para esas reuniones entre amigos, familia o en cualquier momento especial. Las que te desvaran para sacar adelante el evento: bocaditos de coctelera papa y carne, perfectos para compartir.</p><div class="price-slot"><span class="pz">$10,000</span><span class="pu">5 unidades</span></div></div></div>
-</div><h3 style="margin:38px 0 22px;">Dedos Guerreros</h3><div class="menu-grid"><div class="card"><div class="card-img"><img width="1403" height="1121" src="assets/6.-El-consentido-dedo-relleno-de-bocadillo-y-queso-La-Empanada-Guerrera.webp" alt="El Consentido, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Consentido</div><div class="cfill">Bocadillo y queso</div><p>El favorito de la casa, el que uno se guarda para consentirse solo. Bocadillo y queso, dulce y suave por dentro.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1234" height="1275" src="assets/7.-El-bacan-dedo-relleno-hawaiano-La-Empanada-Guerrera.webp" alt="El Bacán, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Bacán</div><div class="cfill">Hawaiano</div><p>El que le cae bien a todo el mundo. Sabor hawaiano para los que le suman un toque distinto a cualquier plan.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1233" height="1275" src="assets/8.-El-Estirado-dedo-relleno-de-queso-La-Empanada-Guerrera.webp" alt="El Estirado, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Estirado</div><div class="cfill">Solo queso</div><p>Solo queso, directo y sin vueltas, para los que van al grano y no necesitan más que lo esencial bien hecho.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div></div></div>
-<div class="card"><div class="card-img"><img width="1404" height="1120" src="assets/9.-El-Goloso-dedo-relleno-de-arequipe-y-queso-La-Empanada-Guerrera.webp" alt="El Goloso, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Goloso</div><div class="cfill">Arequipe y queso</div><p>Para los golosos de verdad: arequipe y queso en un contraste dulce que no decepciona</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div></div></div>
+<div class="card"><div class="card-img"><img width="1254" height="1254" src="assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="La Berraca, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Berraca</div><div class="cfill">Papa-Carne</div><p>Como esas mujeres berracas que se levantan primero y sacan a su familia adelante sin bajar la guardia. Papa y carne, con toda la fuerza de siempre.</p><div class="price-slot"><span class="pz">$3,700</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/empanada-la-berraca.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1122" height="1402" src="assets/2.-La-tesa-empanada-papa-carne-carnuda-mas-porcentaje-de-carne-La-Empanada-Guerrera.webp" alt="La Tesa, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Tesa</div><div class="cfill">Papa y Mayor porcentaje de Carne</div><p>La que piensa antes de actuar y no se deja ganar: mayor porcentaje de carne para las que resuelven todo con cabeza fría e inteligencia.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/empanada-la-tesa.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1254" height="1254" src="assets/3.-Echada-Pa-lante-Empanada-papa-pollo.webp" alt="La Echada pa' lante, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">La Echada pa' lante</div><div class="cfill">Papa-Pollo</div><p>Papa y pollo para las que no se detienen ante nada: siempre echadas pa'lante, pase lo que pase.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/empanada-la-echada-pa-lante.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="791" height="746" src="assets/4.-Las-Camelladoras-Empanada-Queso-La-Empanada-Guerrera.webp" alt="Las Camelladoras, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Las Camelladoras</div><div class="cfill">Queso</div><p>Para los que camellan duro todos los días y se ganan cada logro a pulso. Rellena de queso derretido, como premio al esfuerzo.</p><div class="price-slot"><span class="pz">$4,000</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/empanada-de-queso-las-camelladoras.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1240" height="1148" src="assets/5.-Las-del-desvare-empanadas-cocteleras-papa-carne-La-empanada-Guerrera.webp" alt="Las del Desvare, empanada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Las del Desvare</div><div class="cfill">Coctelera Papa-Carne</div><p>Para esas reuniones entre amigos, familia o en cualquier momento especial. Las que te desvaran para sacar adelante el evento: bocaditos de coctelera papa y carne, perfectos para compartir.</p><div class="price-slot"><span class="pz">$10,000</span><span class="pu">5 unidades</span></div><a class="ver-ficha" href="/blog/empanadas-cocteleras-las-del-desvare.html">Conoce su historia y su personaje →</a></div></div>
+</div><h3 style="margin:38px 0 22px;">Dedos Guerreros</h3><div class="menu-grid"><div class="card"><div class="card-img"><img width="1403" height="1121" src="assets/6.-El-consentido-dedo-relleno-de-bocadillo-y-queso-La-Empanada-Guerrera.webp" alt="El Consentido, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Consentido</div><div class="cfill">Bocadillo y queso</div><p>El favorito de la casa, el que uno se guarda para consentirse solo. Bocadillo y queso, dulce y suave por dentro.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/dedo-relleno-el-consentido.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1234" height="1275" src="assets/7.-El-bacan-dedo-relleno-hawaiano-La-Empanada-Guerrera.webp" alt="El Bacán, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Bacán</div><div class="cfill">Hawaiano</div><p>El que le cae bien a todo el mundo. Sabor hawaiano para los que le suman un toque distinto a cualquier plan.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/dedo-relleno-hawaiano-el-bacan.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1233" height="1275" src="assets/8.-El-Estirado-dedo-relleno-de-queso-La-Empanada-Guerrera.webp" alt="El Estirado, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Estirado</div><div class="cfill">Solo queso</div><p>Solo queso, directo y sin vueltas, para los que van al grano y no necesitan más que lo esencial bien hecho.</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/dedo-relleno-de-queso-el-estirado.html">Conoce su historia y su personaje →</a></div></div>
+<div class="card"><div class="card-img"><img width="1404" height="1120" src="assets/9.-El-Goloso-dedo-relleno-de-arequipe-y-queso-La-Empanada-Guerrera.webp" alt="El Goloso, dedo relleno de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">El Goloso</div><div class="cfill">Arequipe y queso</div><p>Para los golosos de verdad: arequipe y queso en un contraste dulce que no decepciona</p><div class="price-slot"><span class="pz">$4,500</span><span class="pu">1 unidad</span></div><a class="ver-ficha" href="/blog/dedo-relleno-arequipe-el-goloso.html">Conoce su historia y su personaje →</a></div></div>
 </div></div><div class="panel" id="p-b2c"><h3 style="margin-bottom:22px;">Para llevar a casa</h3><div class="menu-grid"><div class="card"><div class="card-img"><img width="1792" height="2390" src="assets/13.-Empanada-Congelada-papa-carne-La-Empanada-Guerrera.webp" alt="Empanada Papa-Carne congelada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Empanada Papa-Carne</div><div class="cfill">Empanada Papa-Carne</div><p>Producto preparado con el sabor de La Empanada Guerrera.</p><div class="price-slot"><span class="pz">$20,000</span><span class="pu">10 unidades</span></div></div></div>
 <div class="card"><div class="card-img"><img width="1792" height="2390" src="assets/14.-Empanada-congelada-carnuda-La-Empanada-Guerrera.webp" alt="Empanada Carnuda congelada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Empanada Carnuda</div><div class="cfill">Empanada Carnuda</div><p>Producto preparado con el sabor de La Empanada Guerrera.</p><div class="price-slot"><span class="pz">$22,000</span><span class="pu">10 unidades</span></div></div></div>
 <div class="card"><div class="card-img"><img width="1202" height="1308" src="assets/15.-Empanada-congelada-papa-pollo-La-Empanada-Guerrera.webp" alt="Empanada Papa-Pollo congelada de La Empanada Guerrera" loading="lazy" decoding="async"></div><div class="card-body"><div class="cname">Empanada Papa-Pollo</div><div class="cfill">Empanada Papa-Pollo</div><p>Producto preparado con el sabor de La Empanada Guerrera.</p><div class="price-slot"><span class="pz">$22,000</span><span class="pu">10 unidades</span></div></div></div>
@@ -730,20 +754,28 @@
 
 <div id="blog-dinamico" class="menu-grid">
 <!-- BLOG:INICIO -->
-<a class="card" href="/blog/empanada-la-berraca.html">
-  <div class="card-img"><img width="800" height="600" loading="lazy" decoding="async" src="/assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="La Berraca: la empanada papa carne que representa fuerza y sabor colombiano"></div>
+<a class="card" href="/blog/como-freir-empanadas-congeladas.html">
+  <div class="card-img"><img width="800" height="600" loading="lazy" decoding="async" src="/assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp" alt="Cómo freír empanadas congeladas para que queden crocantes"></div>
   <div class="card-body">
-    <h3 class="cname">La Berraca: la empanada papa carne que representa fuerza y sabor colombiano</h3>
-    <div class="cfill">4 de septiembre de 2026</div>
-    <p>Conoce La Berraca, la empanada papa carne de La Empanada Guerrera. Producto de calidad con 30% carne y 70% papa, ideal para hogares, eventos y negocios.</p>
+    <h3 class="cname">Cómo freír empanadas congeladas para que queden crocantes</h3>
+    <div class="cfill">16 de octubre de 2026</div>
+    <p>Cómo freír empanadas congeladas para que queden crocantes: temperatura del aceite (160–165 °C), tiempos por tipo de empanada y los 5 errores que las dañan.</p>
   </div>
 </a>
-<a class="card" href="/blog/empanada-la-tesa.html">
-  <div class="card-img"><img width="800" height="600" loading="lazy" decoding="async" src="/assets/2.-La-tesa-empanada-papa-carne-carnuda-mas-porcentaje-de-carne-La-Empanada-Guerrera.webp" alt="La Tesa: la empanada papa carne para quienes quieren más sabor a carne"></div>
+<a class="card" href="/blog/cuantas-empanadas-por-persona.html">
+  <div class="card-img"><img width="800" height="600" loading="lazy" decoding="async" src="/assets/5.-Las-del-desvare-empanadas-cocteleras-papa-carne-La-empanada-Guerrera.webp" alt="¿Cuántas empanadas por persona? Calculadora para tu evento"></div>
   <div class="card-body">
-    <h3 class="cname">La Tesa: la empanada papa carne para quienes quieren más sabor a carne</h3>
-    <div class="cfill">4 de septiembre de 2026</div>
-    <p>Conoce La Tesa, la empanada papa carne de La Empanada Guerrera con mayor porcentaje de carne: 60% carne y 40% papa. Ideal para hogares, eventos y negocios.</p>
+    <h3 class="cname">¿Cuántas empanadas por persona? Calculadora para tu evento</h3>
+    <div class="cfill">16 de octubre de 2026</div>
+    <p>Calcula cuántas empanadas o cocteleras necesitas por persona para tu evento, reunión, novena o refrigerio. Calculadora gratis y recomendaciones por tipo de evento.</p>
+  </div>
+</a>
+<a class="card" href="/blog/cuanto-se-gana-vendiendo-empanadas.html">
+  <div class="card-img"><img width="800" height="600" loading="lazy" decoding="async" src="/assets/17.-Empanada-congelada-coctelera-papa-carne-La-Empanada-Guerrera.webp" alt="¿Cuánto se gana vendiendo empanadas? Márgenes por caja"></div>
+  <div class="card-body">
+    <h3 class="cname">¿Cuánto se gana vendiendo empanadas? Márgenes por caja</h3>
+    <div class="cfill">16 de octubre de 2026</div>
+    <p>Cuánto se gana vendiendo empanadas congeladas en una tienda o cafetería: costo por unidad, ejemplo de precio de venta y margen por caja con precios reales.</p>
   </div>
 </a>
 <!-- BLOG:FIN -->
@@ -813,8 +845,11 @@
       <p>Bendecidos al estar ubicados en el barrio Minuto de Dios; punto de venta estratégico en la Cra 76 # 80B - 16 de la santísima localidad de Engativá en Bogotá.</p>
       <div class="rope"></div>
     </div>
-    <div style="text-align:center; margin-bottom:28px;">
-      <a class="btn btn-chili" href="https://www.google.com/maps/place/Cra.+76+%2380b-16,+Engativ%C3%A1,+Bogot%C3%A1,+Cundinamarca/@4.6982302,-74.0922446,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b308cd882ed:0xb4782215daceace3!8m2!3d4.6982302!4d-74.0922446!16s%2Fg%2F11m63mqmlb" target="_blank" rel="noopener">Ver ubicación</a>
+    <div class="horario-box"><b>Horario:</b> lunes a viernes 7:00 a.&nbsp;m. – 9:00 p.&nbsp;m. · sábados 9:00 a.&nbsp;m. – 9:00 p.&nbsp;m. · domingos cerrado</div>
+    <div style="text-align:center; margin-bottom:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a class="btn btn-chili" href="https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener" onclick="gtag('event','click_maps',{'boton':'home_ver_maps'});">Ver en Google Maps</a>
+      <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=La%20Empanada%20Guerrera&amp;destination_place_id=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener" onclick="gtag('event','click_maps',{'boton':'home_como_llegar'});">Cómo llegar</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener" onclick="gtag('event','click_resena',{'boton':'home_resena'});">Déjanos tu reseña ★</a>
     </div>
     <div style="position:relative; max-width:820px; margin:0 auto; border-radius:20px; overflow:hidden; box-shadow:0 20px 40px -24px rgba(26,14,5,.35); border:1px solid rgba(26,14,5,.12);">
       <div id="mapa-guerrera" style="width:100%; height:380px; background:var(--hueso-2); display:flex; align-items:center; justify-content:center; font-family:'Kanit',sans-serif; color:var(--leather); text-align:center; padding:20px;">
@@ -869,9 +904,11 @@
     pin.style.height = '58px';
     pin.style.filter = 'drop-shadow(0 6px 10px rgba(26,14,5,.45))';
     if(google.maps.marker && google.maps.marker.AdvancedMarkerElement){
-      new google.maps.marker.AdvancedMarkerElement({ map: mapa, position: ubicacion, content: pin, title: 'La Empanada Guerrera' });
+      var mk = new google.maps.marker.AdvancedMarkerElement({ map: mapa, position: ubicacion, content: pin, title: 'La Empanada Guerrera', gmpClickable: true });
+      mk.addListener('click', function(){ window.open('https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI','_blank'); });
     } else {
-      new google.maps.Marker({ map: mapa, position: ubicacion, icon: { url: pin.src, scaledSize: new google.maps.Size(58,58) }, title: 'La Empanada Guerrera' });
+      var mk2 = new google.maps.Marker({ map: mapa, position: ubicacion, icon: { url: pin.src, scaledSize: new google.maps.Size(58,58) }, title: 'La Empanada Guerrera' });
+      mk2.addListener('click', function(){ window.open('https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI','_blank'); });
     }
   }
 </script>
@@ -901,6 +938,9 @@
         <a href="/negocios/">Congeladas al por mayor</a>
         <a href="/eventos/">Empanadas para eventos</a>
         <a href="/franquicias/">Franquicias</a>
+        <a href="/empanadas-a-domicilio-bogota/">Empanadas a domicilio</a>
+        <a href="/empanadas-para-tiendas-y-cafeterias/">Para tiendas y cafeterías</a>
+        <a href="/refrigerios-empresariales/">Refrigerios empresariales</a>
       </div>
       <div>
         <h5>Contacto</h5>
@@ -909,13 +949,15 @@
         <a class="ct" href="mailto:contacto@laempanadaguerrera.com" target="_blank" rel="noopener"><span class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg></span><span>contacto@laempanadaguerrera.com</span></a>
         <a class="ct" href="https://www.instagram.com/laempanadaguerrera/" target="_blank" rel="noopener"><span class="ct-ic ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></span><span>@laempanadaguerrera</span></a>
         <a class="ct" href="https://www.tiktok.com/@laempanadaguerrera" target="_blank" rel="noopener"><span class="ct-ic tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8c-1-.7-1.6-1.8-1.8-3h-2.9v11.4c0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4 1.1-2.4 2.4-2.4c.3 0 .5 0 .7.1V8.9c-.2 0-.5-.1-.7-.1-3 0-5.4 2.4-5.4 5.4s2.4 5.4 5.4 5.4 5.4-2.4 5.4-5.4V9c1.1.8 2.5 1.3 4 1.3V7.4c-.9 0-1.7-.3-2.3-.8v-.8z"/></svg></span><span>@laempanadaguerrera</span></a>
-        <a class="ct" href="https://www.google.com/maps/place/Cra.+76+%2380b-16,+Engativ%C3%A1,+Bogot%C3%A1,+Cundinamarca/@4.6982302,-74.0922446,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b308cd882ed:0xb4782215daceace3!8m2!3d4.6982302!4d-74.0922446!16s%2Fg%2F11m63mqmlb" target="_blank" rel="noopener"><span class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span>Cra. 76 #80b-16, Engativá<br><b>Bogotá D.C.</b></span></a>
+        <a class="ct" href="https://www.google.com/maps/place/?q=place_id:ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener"><span class="ct-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span>Cra. 76 #80b-16, Engativá<br><b>Bogotá D.C.</b></span></a>
       </div>
     </div>
 <div class="foot-legal">
 <p>
   Inversiones Guerreras S.A.S · NIT 902093111-1<br>
   Sede Minuto de Dios: Cra. 76 # 80B-16, Bogotá D.C., Colombia<br>
+  Horario: lunes a viernes 7:00 a.&nbsp;m. – 9:00 p.&nbsp;m. · sábados 9:00 a.&nbsp;m. – 9:00 p.&nbsp;m. · domingos cerrado<br>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=La%20Empanada%20Guerrera&amp;destination_place_id=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener">Cómo llegar</a> · <a href="https://search.google.com/local/writereview?placeid=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener">Déjanos tu reseña en Google</a><br>
   <a href="mailto:contacto@laempanadaguerrera.com">contacto@laempanadaguerrera.com</a><br>
   <span class="legal-phone"><a href="tel:+573239102290">Teléfono +57 323 910 2290</a></span>
 </p>
