@@ -5,6 +5,7 @@ on:
     paths:
       - "blog/*.html"
       - "scripts/generar-blog.js"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,7 +23,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generar articulos.json
+      - name: Generar listado del blog y sitemap
         run: node scripts/generar-blog.js
 
       - name: Guardar cambios
@@ -30,8 +31,8 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add blog/articulos.json
+          git add blog/articulos.json blog/index.html index.html sitemap.xml
 
-          git commit -m "Actualizar artículos del blog automático" || exit 0
+          git commit -m "Actualizar artículos del blog y sitemap" || exit 0
 
           git push
