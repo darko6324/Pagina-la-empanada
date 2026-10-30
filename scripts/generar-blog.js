@@ -20,7 +20,7 @@ const SITIO = "https://laempanadaguerrera.com";
 const RAIZ = path.join(__dirname, "..");
 const BLOG_DIR = path.join(RAIZ, "blog");
 
-const PAGINAS_FIJAS = ["/", "/productos/", "/hogar/", "/negocios/", "/eventos/", "/franquicias/", "/empanadas-a-domicilio-bogota/", "/empanadas-engativa/", "/empanadas-congeladas-bogota/", "/empanadas-para-tiendas-y-cafeterias/", "/empanadas-para-restaurantes-y-casinos/", "/cocteleras-para-eventos/", "/refrigerios-empresariales/", "/empanadas-para-novenas/", "/dedos-rellenos-congelados/", "/blog/", "/privacidad/"];
+const PAGINAS_FIJAS = ["/", "/productos/", "/hogar/", "/negocios/", "/eventos/", "/franquicias/", "/empanadas-a-domicilio-bogota/", "/empanadas-engativa/", "/empanadas-congeladas-bogota/", "/empanadas-para-tiendas-y-cafeterias/", "/empanadas-para-restaurantes-y-casinos/", "/cocteleras-para-eventos/", "/refrigerios-empresariales/", "/empanadas-para-novenas/", "/dedos-rellenos-congelados/", "/blog/", "/privacidad/", "/terminos/"];
 
 function extraer(html, regex) {
   const m = html.match(regex);
