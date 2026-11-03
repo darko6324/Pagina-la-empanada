@@ -1,0 +1,19 @@
+store_code	id	availability	price	pickup_method	pickup_sla
+07093637131149340806	la-berraca-hogar-x10	in_stock	20000 COP	buy	same day
+07093637131149340806	la-berraca-negocios-x30	in_stock	45000 COP	buy	same day
+07093637131149340806	la-tesa-hogar-x10	in_stock	22000 COP	buy	same day
+07093637131149340806	la-tesa-negocios-x30	in_stock	51000 COP	buy	same day
+07093637131149340806	la-echada-pa-lante-hogar-x10	in_stock	22000 COP	buy	same day
+07093637131149340806	la-echada-pa-lante-negocios-x20	in_stock	34000 COP	buy	same day
+07093637131149340806	las-camelladoras-hogar-x10	in_stock	22000 COP	buy	same day
+07093637131149340806	las-camelladoras-negocios-x10	in_stock	17000 COP	buy	same day
+07093637131149340806	las-del-desvare-hogar-x30	in_stock	30000 COP	buy	same day
+07093637131149340806	las-del-desvare-negocios-x100	in_stock	80000 COP	buy	same day
+07093637131149340806	el-consentido-hogar-x10	in_stock	25000 COP	buy	same day
+07093637131149340806	el-consentido-negocios-x10	in_stock	20000 COP	buy	same day
+07093637131149340806	el-bacan-hogar-x10	in_stock	25000 COP	buy	same day
+07093637131149340806	el-bacan-negocios-x10	in_stock	20000 COP	buy	same day
+07093637131149340806	el-estirado-hogar-x10	in_stock	25000 COP	buy	same day
+07093637131149340806	el-estirado-negocios-x10	in_stock	20000 COP	buy	same day
+07093637131149340806	el-goloso-hogar-x10	in_stock	25000 COP	buy	same day
+07093637131149340806	el-goloso-negocios-x10	in_stock	21000 COP	buy	same day
