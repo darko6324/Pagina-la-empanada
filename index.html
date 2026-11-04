@@ -715,16 +715,16 @@
     (function () {
       var f = document.getElementById('tienda-tienda');
       var ORIGEN = new URL(f.src, location.href).origin;
-      var P = 'tienda:', KEY = 'tienda-tienda-estado', previo = null;
+      var P = 'tienda:', KEY = 'tienda-tienda-estado', BASE = f.getAttribute('style'), alto = null;
       function enviar(m) { f.contentWindow.postMessage(m, ORIGEN); }
-      function abrir() { previo = f.getAttribute('style'); f.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;border:0;background:transparent'; document.documentElement.style.overflow = 'hidden'; }
-      function cerrar() { f.style.cssText = previo || ''; document.documentElement.style.overflow = ''; }
+      function abrir() { f.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;border:0;background:transparent'; document.documentElement.style.overflow = 'hidden'; }
+      function cerrar() { f.style.cssText = BASE; if (alto) f.style.height = alto + 'px'; document.documentElement.style.overflow = ''; }
       window.addEventListener('message', function (e) {
         if (e.origin !== ORIGEN || e.source !== f.contentWindow) return;
         var m = e.data || {};
         if (typeof m.tipo !== 'string' || m.tipo.indexOf(P) !== 0) return;
         switch (m.tipo.slice(P.length)) {
-          case 'altura': f.style.height = m.alto + 'px'; break;
+          case 'altura': alto = m.alto; if (f.style.position !== 'fixed') f.style.height = m.alto + 'px'; break;
           case 'bolsa-abierta': abrir(); break;
           case 'bolsa-cerrada': cerrar(); break;
           case 'subir': f.scrollIntoView({ behavior: 'smooth', block: 'start' }); break;
