@@ -707,8 +707,35 @@
       <div class="rope"></div>
     </div>
 
-    <iframe src="https://pedidos.laempanadaguerrera.com/c/IGS?embed=1" title="Catálogo" scrolling="no" allowtransparency="true" style="width:100%;height:720px;border:0;display:block;background:transparent" loading="lazy"></iframe>
-    <script>window.addEventListener("message",function(e){var d=e.data;if(!d||!d.tipo)return;var f=document.querySelector('iframe[src^="https://pedidos.laempanadaguerrera.com/c/IGS"]');if(!f||e.source!==f.contentWindow)return;if(d.tipo==="catalogo:alto")f.style.height=d.alto+"px";if(d.tipo==="catalogo:subir")f.scrollIntoView({behavior:"smooth",block:"start"});});</script>
+    <!-- Tienda IGS -->
+    <iframe id="tienda-tienda" src="https://pedidos.laempanadaguerrera.com/t/IGS?embed=1" title="Tienda" loading="lazy"
+      style="width:100%;height:700px;border:0;display:block"
+      sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
+    <script>
+    (function () {
+      var f = document.getElementById('tienda-tienda');
+      var ORIGEN = new URL(f.src, location.href).origin;
+      var P = 'tienda:', KEY = 'tienda-tienda-estado', previo = null;
+      function enviar(m) { f.contentWindow.postMessage(m, ORIGEN); }
+      function abrir() { previo = f.getAttribute('style'); f.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;border:0;background:transparent'; document.documentElement.style.overflow = 'hidden'; }
+      function cerrar() { f.style.cssText = previo || ''; document.documentElement.style.overflow = ''; }
+      window.addEventListener('message', function (e) {
+        if (e.origin !== ORIGEN || e.source !== f.contentWindow) return;
+        var m = e.data || {};
+        if (typeof m.tipo !== 'string' || m.tipo.indexOf(P) !== 0) return;
+        switch (m.tipo.slice(P.length)) {
+          case 'altura': f.style.height = m.alto + 'px'; break;
+          case 'bolsa-abierta': abrir(); break;
+          case 'bolsa-cerrada': cerrar(); break;
+          case 'subir': f.scrollIntoView({ behavior: 'smooth', block: 'start' }); break;
+          case 'bolsa': /* m.unidades y m.total: ponlos en tu botón de bolsa */ break;
+          case 'estado-guardar': try { localStorage.setItem(KEY, JSON.stringify({ bolsa: m.bolsa, cliente: m.cliente })); } catch (x) {} break;
+          case 'estado-pedir': var s = null; try { s = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (x) {} enviar({ tipo: P + 'estado', bolsa: s && s.bolsa, cliente: s && s.cliente }); break;
+        }
+      });
+      /* Para abrir la bolsa desde un botón tuyo: enviar({ tipo: P + 'abrir-bolsa' }) */
+    })();
+    </script>
   </div>
 </section>
 
