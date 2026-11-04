@@ -717,8 +717,9 @@
       var ORIGEN = new URL(f.src, location.href).origin;
       var P = 'tienda:', KEY = 'tienda-tienda-estado', BASE = f.getAttribute('style'), alto = null;
       function enviar(m) { f.contentWindow.postMessage(m, ORIGEN); }
-      function abrir() { f.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;border:0;background:transparent'; document.documentElement.style.overflow = 'hidden'; }
-      function cerrar() { f.style.cssText = BASE; if (alto) f.style.height = alto + 'px'; document.documentElement.style.overflow = ''; }
+      function subir(on) { for (var e = f.parentElement; e && e !== document.body; e = e.parentElement) { if (on) { if (getComputedStyle(e).zIndex !== 'auto') { e.setAttribute('data-z', e.style.zIndex); e.style.zIndex = '2147483000'; } } else if (e.hasAttribute('data-z')) { e.style.zIndex = e.getAttribute('data-z'); e.removeAttribute('data-z'); } } }
+      function abrir() { subir(true); f.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;border:0;background:transparent'; document.documentElement.style.overflow = 'hidden'; }
+      function cerrar() { subir(false); f.style.cssText = BASE; if (alto) f.style.height = alto + 'px'; document.documentElement.style.overflow = ''; }
       window.addEventListener('message', function (e) {
         if (e.origin !== ORIGEN || e.source !== f.contentWindow) return;
         var m = e.data || {};
