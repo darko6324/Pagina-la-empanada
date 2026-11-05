@@ -173,9 +173,8 @@ footer a:hover{color:var(--gold);}
   .chulos{grid-template-columns:1fr;}
   .foot-grid{grid-template-columns:1fr 1fr;}
   .wa-float{display:none;}
-  .order-bar{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:70; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(26,14,5,.96); backdrop-filter:blur(10px); border-top:1px solid rgba(247,179,20,.28);}
+  .order-bar{display:flex; position:static; gap:10px; padding:14px 14px calc(14px + env(safe-area-inset-bottom)); background:var(--espresso); border-top:1px solid rgba(247,179,20,.28);}
   .order-bar a{flex:1; border:none; padding:13px 10px;}
-  body{padding-bottom:76px;}
   section.block{padding:60px 0;}
 }
 @media(max-width:560px){

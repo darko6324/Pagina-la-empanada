@@ -226,12 +226,11 @@
   .order-bar{display:none;}
   @media(max-width:900px){
     .wa-float{display:none;}
-    .order-bar{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:70; gap:10px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
-      background:rgba(26,14,5,.96); backdrop-filter:blur(10px); border-top:1px solid rgba(247,179,20,.28);}
+    .order-bar{display:flex; position:static; gap:10px; padding:14px 14px calc(14px + env(safe-area-inset-bottom));
+      background:#1A0E05; border-top:1px solid rgba(247,179,20,.28);}
     .order-bar a{flex:1; justify-content:center; padding:13px 10px; font-size:.9rem; border:none;}
     .order-bar .ob-wa{background:#25D366; color:#fff;}
     .order-bar .ob-fr{background:var(--gold); color:var(--espresso);}
-    body{padding-bottom:76px;}
   }
   @media(prefers-reduced-motion:reduce){
     .reveal{opacity:1; transform:none; transition:none;}
