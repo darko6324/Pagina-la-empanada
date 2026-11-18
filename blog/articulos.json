@@ -1,5 +1,23 @@
 [
   {
+    "titulo": "Empanadas colombianas: qué las hace típicas y cuáles pedir en Bogotá",
+    "descripcion": "La empanada colombiana típica es de maíz, frita y con ají. Los tipos por región, los rellenos más pedidos y dónde comprar empanadas típicas en Bogotá.",
+    "imagen": "/assets/1.-La-berraca-Empanada-Papa-Carne-La-empanada-guerrera.webp",
+    "fecha": "2026-11-17",
+    "modificado": "2026-11-17",
+    "url": "empanadas-colombianas.html",
+    "categoria": "Blog"
+  },
+  {
+    "titulo": "Vitrina para empanadas: cuál elegir y cómo vender más con ella",
+    "descripcion": "Qué vitrina para empanadas comprar, a qué temperatura mantenerlas, cuánto tiempo pueden estar exhibidas y cómo llenarla sin perder producto.",
+    "imagen": "/assets/13.-Empanada-Congelada-papa-carne-La-Empanada-Guerrera.webp",
+    "fecha": "2026-11-17",
+    "modificado": "2026-11-17",
+    "url": "vitrina-para-empanadas.html",
+    "categoria": "Blog"
+  },
+  {
     "titulo": "Franquicias baratas en Colombia: cómo elegir una que sea rentable",
     "descripcion": "Qué hace económica a una franquicia en Colombia: regalías, local, cocina, contrato y pedido inicial. Checklist para elegir una franquicia de comida.",
     "imagen": "/assets/primer-punto-de-venta-la-empanada-guerrera.webp",
@@ -9,11 +27,11 @@
     "categoria": "Blog"
   },
   {
-    "titulo": "Fábrica de empanadas en Bogotá: qué revisar antes de comprar empanadas congeladas",
+    "titulo": "Cómo elegir una fábrica de empanadas: 5 cosas que revisar antes de comprar",
     "descripcion": "Empanadas congeladas de maíz en Bogotá con registro INVIMA, peso estándar y entrega a domicilio, para negocios, para la casa y para eventos.",
     "imagen": "/assets/13.-Empanada-Congelada-papa-carne-La-Empanada-Guerrera.webp",
     "fecha": "2026-10-26",
-    "modificado": "2026-10-26",
+    "modificado": "2026-11-17",
     "url": "fabrica-de-empanadas-en-bogota.html",
     "categoria": "Blog"
   },
