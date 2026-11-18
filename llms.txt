@@ -9,7 +9,8 @@ Ubicación en Google Maps: https://www.google.com/maps/place/?q=place_id:ChIJX3H
 - [Inicio](https://laempanadaguerrera.com/): menú, precios, equipo y personajes
 - [Productos](https://laempanadaguerrera.com/productos/): catálogo completo con ficha técnica de cada producto
 - [Paquetes para el hogar](https://laempanadaguerrera.com/hogar/): empanadas congeladas por paquete para la casa
-- [Para negocios](https://laempanadaguerrera.com/negocios/): venta al por mayor con simulador de ganancia
+- [Para negocios](https://laempanadaguerrera.com/negocios/): empanadas congeladas para negocio con simulador de ganancia
+- [Empanadas al por mayor en Bogotá](https://laempanadaguerrera.com/empanadas-al-por-mayor-bogota/): precios por paquete, desde $650 la coctelera y $1.500 la empanada
 - [Eventos](https://laempanadaguerrera.com/eventos/): cocteleras y empanadas para eventos
 - [Franquicias](https://laempanadaguerrera.com/franquicias/): franquicia de empanadas sin regalías mensuales ni fondo de mercadeo, local de 10 a 20 m², contrato de 1 año
 
