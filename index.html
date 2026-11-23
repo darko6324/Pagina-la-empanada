@@ -1031,9 +1031,15 @@
   async function cargarResenasGoogle(){
     try{
       if(!window.google||!google.maps||!google.maps.importLibrary) return;
-      var lib = await google.maps.importLibrary('places');
-      var lugar = new lib.Place({ id: 'ChIJX3HISUWbP44Rs3B8RLv5GlI', requestedLanguage: 'es' });
-      await lugar.fetchFields({ fields: ['rating','userRatingCount','reviews'] });
+      var CK = 'resenasGoogleV1', lugar = null;
+      try{ var c = JSON.parse(localStorage.getItem(CK)||'null'); if(c && Date.now()-c.t < 12*3600*1000) lugar = c.d; }catch(e){}
+      if(!lugar){
+        var lib = await google.maps.importLibrary('places');
+        var p = new lib.Place({ id: 'ChIJX3HISUWbP44Rs3B8RLv5GlI', requestedLanguage: 'es' });
+        await p.fetchFields({ fields: ['rating','userRatingCount','reviews'] });
+        lugar = { rating: p.rating, userRatingCount: p.userRatingCount, reviews: (p.reviews||[]).map(function(r){ return { rating: r.rating, text: r.text, relativePublishTimeDescription: r.relativePublishTimeDescription, authorAttribution: r.authorAttribution ? { displayName: r.authorAttribution.displayName, uri: r.authorAttribution.uri } : null }; }) };
+        try{ localStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: lugar })); }catch(e){}
+      }
       if(!lugar.rating || !lugar.userRatingCount) return;
       var nota = document.getElementById('resenas-nota');
       var total = document.getElementById('resenas-total');
