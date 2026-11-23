@@ -962,15 +962,15 @@
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">Opiniones reales</span><h2>Lo que dicen de nosotros en Google</h2><div class="rope"></div></div>
     <div class="resumen">
-      <span class="nota-grande">5,0</span>
-      <div style="text-align:left"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><div><b>12 opiniones</b> en Google</div></div>
+      <span class="nota-grande" id="resenas-nota">5,0</span>
+      <div style="text-align:left"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><div><b id="resenas-total">12 opiniones</b> en Google</div></div>
     </div>
-    <div class="grid-resenas"><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Para mí las mejores empanadas que he probado 😋 súper recomendadas, la atención excelente, para cualquier evento serían las ideales.”</blockquote><figcaption>Leidi Viviana García <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Las empanadas de queso bofff y todo en general muy top 💯”</blockquote><figcaption>Lil Navas <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Empanadas muy ricas, la mejor atención, super recomendadas”</blockquote><figcaption>Diana Santos <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Sabor sin comparación”</blockquote><figcaption>Alejandro Ayala <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Ricas y crujientes mejorar las de queso muy pequeñas 😉”</blockquote><figcaption>Alberto Colorado <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Muy ricas, recomendadas”</blockquote><figcaption>Samir Steaven Barreto García <span>· en Google</span></figcaption></figure></div>
+    <div class="grid-resenas" id="resenas-grid"><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Para mí las mejores empanadas que he probado 😋 súper recomendadas, la atención excelente, para cualquier evento serían las ideales.”</blockquote><figcaption>Leidi Viviana García <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Las empanadas de queso bofff y todo en general muy top 💯”</blockquote><figcaption>Lil Navas <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Empanadas muy ricas, la mejor atención, super recomendadas”</blockquote><figcaption>Diana Santos <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Sabor sin comparación”</blockquote><figcaption>Alejandro Ayala <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Ricas y crujientes mejorar las de queso muy pequeñas 😉”</blockquote><figcaption>Alberto Colorado <span>· en Google</span></figcaption></figure><figure class="resena"><div class="estrellas" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Muy ricas, recomendadas”</blockquote><figcaption>Samir Steaven Barreto García <span>· en Google</span></figcaption></figure></div>
     <div class="cta-centro" style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <a class="btn btn-gold" href="https://search.google.com/local/reviews?placeid=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener" onclick="gtag('event','click_resena',{'boton':'home_ver_resenas'});">Ver todas en Google</a>
       <a class="btn btn-chili" href="https://search.google.com/local/writereview?placeid=ChIJX3HISUWbP44Rs3B8RLv5GlI" target="_blank" rel="noopener" onclick="gtag('event','click_resena',{'boton':'home_resenas_escribir'});">Déjanos tu reseña ★</a>
     </div>
-    <p class="cta-nota" style="text-align:center">Calificación y opiniones tomadas de nuestro perfil de Google, noviembre de 2026.</p>
+    <p class="cta-nota" style="text-align:center" id="resenas-fuente">Calificación y opiniones tomadas de nuestro perfil de Google, noviembre de 2026.</p>
   </div>
 </section>
 
@@ -1027,7 +1027,46 @@
 </section>
 
 <script>
+
+  async function cargarResenasGoogle(){
+    try{
+      if(!window.google||!google.maps||!google.maps.importLibrary) return;
+      var lib = await google.maps.importLibrary('places');
+      var lugar = new lib.Place({ id: 'ChIJX3HISUWbP44Rs3B8RLv5GlI', requestedLanguage: 'es' });
+      await lugar.fetchFields({ fields: ['rating','userRatingCount','reviews'] });
+      if(!lugar.rating || !lugar.userRatingCount) return;
+      var nota = document.getElementById('resenas-nota');
+      var total = document.getElementById('resenas-total');
+      var grid = document.getElementById('resenas-grid');
+      var fuente = document.getElementById('resenas-fuente');
+      if(nota) nota.textContent = lugar.rating.toFixed(1).replace('.', ',');
+      if(total) total.textContent = lugar.userRatingCount + (lugar.userRatingCount === 1 ? ' opinión' : ' opiniones');
+      var buenas = (lugar.reviews || []).filter(function(r){
+        var autor = (r.authorAttribution && r.authorAttribution.displayName) || '';
+        return r.rating >= 4 && r.text && !/empanada guerrera/i.test(autor);
+      });
+      if(grid && buenas.length >= 3){
+        grid.innerHTML = '';
+        buenas.forEach(function(r){
+          var fig = document.createElement('figure'); fig.className = 'resena';
+          var est = document.createElement('div'); est.className = 'estrellas';
+          est.textContent = '★★★★★'.slice(0, Math.round(r.rating)); est.setAttribute('aria-label', r.rating + ' de 5 estrellas');
+          var bq = document.createElement('blockquote'); bq.textContent = '“' + r.text + '”';
+          var cap = document.createElement('figcaption');
+          var a = document.createElement('a');
+          a.textContent = (r.authorAttribution && r.authorAttribution.displayName) || 'Cliente';
+          if(r.authorAttribution && r.authorAttribution.uri){ a.href = r.authorAttribution.uri; a.target = '_blank'; a.rel = 'noopener nofollow'; }
+          a.style.color = 'inherit';
+          var sp = document.createElement('span'); sp.textContent = ' · ' + (r.relativePublishTimeDescription || 'en Google');
+          cap.appendChild(a); cap.appendChild(sp);
+          fig.appendChild(est); fig.appendChild(bq); fig.appendChild(cap); grid.appendChild(fig);
+        });
+      }
+      if(fuente) fuente.textContent = 'Calificación y opiniones en vivo desde nuestro perfil de Google.';
+    }catch(e){ /* si falla, se queda lo que ya está en la página */ }
+  }
   function iniciarMapaGuerrera(){
+    cargarResenasGoogle();
     var ubicacion = { lat: 4.6982302, lng: -74.0922446 };
     var contenedor = document.getElementById('mapa-guerrera');
     if(!contenedor || !window.google) return;
