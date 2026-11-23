@@ -25,6 +25,7 @@ const PLACE = 'ChIJX3HISUWbP44Rs3B8RLv5GlI';
   // Solo se escribe si cambió algo distinto al texto relativo de fecha, para no llenar el historial.
   const firma = d => d && JSON.stringify({ r: d.rating, t: d.total, v: (d.reviews || []).map(x => [x.autor, x.rating, x.text]) });
   if (firma(antes) === firma(datos)) { console.log('Sin cambios'); return; }
+  fs.mkdirSync('data', { recursive: true });
   fs.writeFileSync(f, JSON.stringify({ actualizado: new Date().toISOString(), ...datos }, null, 1));
   console.log('Actualizado', datos.rating, datos.total, reviews.length);
 })();
