@@ -1,0 +1,25 @@
+name: Reseñas de Google
+on:
+  schedule:
+    - cron: '17 */2 * * *'   # cada 2 horas: ~372 consultas/mes (gratis hasta 1.000)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: resenas-google
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/actualizar-resenas.js
+      - run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/resenas-google.json
+            git commit -m "Reseñas de Google actualizadas"
+            git pull --rebase -q && git push
+          fi

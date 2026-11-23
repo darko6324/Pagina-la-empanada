@@ -1030,27 +1030,17 @@
 
   async function cargarResenasGoogle(){
     try{
-      if(!window.google||!google.maps||!google.maps.importLibrary) return;
-      var CK = 'resenasGoogleV1', lugar = null;
-      try{ var c = JSON.parse(localStorage.getItem(CK)||'null'); if(c && Date.now()-c.t < 12*3600*1000) lugar = c.d; }catch(e){}
-      if(!lugar){
-        var lib = await google.maps.importLibrary('places');
-        var p = new lib.Place({ id: 'ChIJX3HISUWbP44Rs3B8RLv5GlI', requestedLanguage: 'es' });
-        await p.fetchFields({ fields: ['rating','userRatingCount','reviews'] });
-        lugar = { rating: p.rating, userRatingCount: p.userRatingCount, reviews: (p.reviews||[]).map(function(r){ return { rating: r.rating, text: r.text, relativePublishTimeDescription: r.relativePublishTimeDescription, authorAttribution: r.authorAttribution ? { displayName: r.authorAttribution.displayName, uri: r.authorAttribution.uri } : null }; }) };
-        try{ localStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: lugar })); }catch(e){}
-      }
-      if(!lugar.rating || !lugar.userRatingCount) return;
+      var res = await fetch('/data/resenas-google.json', { cache: 'no-cache' });
+      if(!res.ok) return;
+      var lugar = await res.json();
+      if(!lugar.rating || !lugar.total) return;
       var nota = document.getElementById('resenas-nota');
       var total = document.getElementById('resenas-total');
       var grid = document.getElementById('resenas-grid');
       var fuente = document.getElementById('resenas-fuente');
-      if(nota) nota.textContent = lugar.rating.toFixed(1).replace('.', ',');
-      if(total) total.textContent = lugar.userRatingCount + (lugar.userRatingCount === 1 ? ' opinión' : ' opiniones');
-      var buenas = (lugar.reviews || []).filter(function(r){
-        var autor = (r.authorAttribution && r.authorAttribution.displayName) || '';
-        return r.rating >= 4 && r.text && !/empanada guerrera/i.test(autor);
-      });
+      if(nota) nota.textContent = Number(lugar.rating).toFixed(1).replace('.', ',');
+      if(total) total.textContent = lugar.total + (lugar.total === 1 ? ' opinión' : ' opiniones');
+      var buenas = (lugar.reviews || []).filter(function(r){ return r.rating >= 4 && r.text && !/empanada guerrera/i.test(r.autor || ''); });
       if(grid && buenas.length >= 3){
         grid.innerHTML = '';
         buenas.forEach(function(r){
@@ -1059,20 +1049,18 @@
           est.textContent = '★★★★★'.slice(0, Math.round(r.rating)); est.setAttribute('aria-label', r.rating + ' de 5 estrellas');
           var bq = document.createElement('blockquote'); bq.textContent = '“' + r.text + '”';
           var cap = document.createElement('figcaption');
-          var a = document.createElement('a');
-          a.textContent = (r.authorAttribution && r.authorAttribution.displayName) || 'Cliente';
-          if(r.authorAttribution && r.authorAttribution.uri){ a.href = r.authorAttribution.uri; a.target = '_blank'; a.rel = 'noopener nofollow'; }
-          a.style.color = 'inherit';
-          var sp = document.createElement('span'); sp.textContent = ' · ' + (r.relativePublishTimeDescription || 'en Google');
+          var a = document.createElement('a'); a.textContent = r.autor || 'Cliente'; a.style.color = 'inherit';
+          if(r.uri){ a.href = r.uri; a.target = '_blank'; a.rel = 'noopener nofollow'; }
+          var sp = document.createElement('span'); sp.textContent = ' · ' + (r.cuando || 'en Google');
           cap.appendChild(a); cap.appendChild(sp);
           fig.appendChild(est); fig.appendChild(bq); fig.appendChild(cap); grid.appendChild(fig);
         });
       }
-      if(fuente) fuente.textContent = 'Calificación y opiniones en vivo desde nuestro perfil de Google.';
+      if(fuente) fuente.textContent = 'Calificación y opiniones de nuestro perfil de Google, actualizadas automáticamente.';
     }catch(e){ /* si falla, se queda lo que ya está en la página */ }
   }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', cargarResenasGoogle); else cargarResenasGoogle();
   function iniciarMapaGuerrera(){
-    cargarResenasGoogle();
     var ubicacion = { lat: 4.6982302, lng: -74.0922446 };
     var contenedor = document.getElementById('mapa-guerrera');
     if(!contenedor || !window.google) return;
